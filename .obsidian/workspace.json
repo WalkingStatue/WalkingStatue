@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Flutter.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Flutter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Flutter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Flutter.md"
               }
             }
           }
@@ -157,10 +157,10 @@
   },
   "active": "367bcfd93548596e",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Introduction.md",
+    "Flutter.md",
     "002 Flutter",
     "001 Project",
-    "000 College",
-    "Flutter.md"
+    "000 College"
   ]
 }
