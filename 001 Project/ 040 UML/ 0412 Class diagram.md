@@ -1,86 +1,88 @@
 **Class Diagram for Personal Finance Management App:**
 
 1. **Class: User**
-    - Attributes: 
-        - userID: Int
-        - username: String
-        - password: String
-        - email: String
-        - dateJoined: Date
+    - Attributes:
+        - `userID`: Int - A unique identifier for each user.
+        - `username`: String - The user's chosen name for the platform.
+        - `password`: String - Encrypted password for user authentication.
+        - `email`: String - The user's email address for communication and potentially for password recovery.
+        - `dateJoined`: Date - The date when the user registered on the platform.
     - Methods:
-        - register()
-        - login()
-        - logout()
-        - updateProfile()
+        - `register()`: Registers a new user.
+        - `login()`: Authenticates and logs a user in.
+        - `logout()`: Logs the user out of the platform.
+        - `updateProfile()`: Allows the user to change profile details.
 
 2. **Class: Transaction**
     - Attributes:
-        - transactionID: Int
-        - amount: Float
-        - date: Date
-        - description: String
-        - category: Category (an association to the Category class)
+        - `transactionID`: Int - A unique identifier for each transaction.
+        - `amount`: Float - The monetary value of the transaction.
+        - `date`: Date - The date the transaction occurred.
+        - `description`: String - Details about the transaction.
+        - `category`: Category - The type or classification of the transaction.
     - Methods:
-        - addTransaction()
-        - editTransaction()
-        - deleteTransaction()
+        - `addTransaction()`: Adds a new transaction.
+        - `editTransaction()`: Modifies an existing transaction.
+        - `deleteTransaction()`: Removes a transaction.
 
 3. **Class: Income (Subclass of Transaction)**
     - Attributes:
-        - source: String (e.g., Salary, Investment)
-    - Methods: (Inherited from Transaction)
+        - `source`: String - Describes the origin of the income (e.g., Salary, Gift).
+    - Methods: 
+        - Inherits all methods from `Transaction`.
 
 4. **Class: Expense (Subclass of Transaction)**
     - Attributes:
-        - destination: String (e.g., Groceries, Rent)
-    - Methods: (Inherited from Transaction)
+        - `destination`: String - Describes where the money was spent (e.g., Groceries, Rent).
+    - Methods:
+        - Inherits all methods from `Transaction`.
 
 5. **Class: Category**
     - Attributes:
-        - categoryID: Int
-        - name: String
-        - type: String (Income or Expense)
+        - `categoryID`: Int - A unique identifier for each category.
+        - `name`: String - The name of the category (e.g., Travel, Food).
+        - `type`: String - Indicates if it's an income or expense category.
     - Methods:
-        - createCategory()
-        - deleteCategory()
+        - `createCategory()`: Creates a new category.
+        - `deleteCategory()`: Deletes an existing category.
 
 6. **Class: Budget**
     - Attributes:
-        - budgetID: Int
-        - month: Date
-        - amount: Float
-        - category: Category (an association to the Category class)
+        - `budgetID`: Int - A unique identifier for each budget entry.
+        - `month`: Date - Specifies the month the budget is set for.
+        - `amount`: Float - The monetary limit set for the budget.
+        - `category`: Category - The specific type or classification of the budget.
     - Methods:
-        - setBudget()
-        - adjustBudget()
+        - `setBudget()`: Establishes a new budget.
+        - `adjustBudget()`: Modifies an existing budget.
 
 7. **Class: FinancialGoal**
-   - Attributes:
-     - goalID: Int
-     - name: String
-     - targetAmount: Float
-     - targetDate: Date
-     - currentAmount: Float
-     - description: String
-   - Methods:
-     - createGoal()
-     - updateGoal()
-     - deleteGoal()
-     - trackProgress()
+    - Attributes:
+        - `goalID`: Int - A unique identifier for each financial goal.
+        - `name`: String - The title or name of the financial goal.
+        - `targetAmount`: Float - The desired monetary value to achieve.
+        - `targetDate`: Date - The date by which the user aims to achieve the goal.
+        - `currentAmount`: Float - The current monetary value saved or accumulated towards the goal.
+        - `description`: String - Further details about the goal.
+    - Methods:
+        - `createGoal()`: Sets a new financial goal.
+        - `updateGoal()`: Modifies details of an existing financial goal.
+        - `deleteGoal()`: Deletes a financial goal.
+        - `trackProgress()`: Monitors the advancement towards the goal's target amount.
 
 8. **Class: FinancialAnalysis**
-   - Attributes:
-     - analysisID: Int
-     - userID: Int
-     - month: Date
-     - totalIncome: Float
-     - totalExpenses: Float
-     - netSavings: Float
-     - budgetVariance: Float
-   - Methods:
-     - generateMonthlySummary()
-     - calculateNetSavings()
-     - calculateBudgetVariance()
+    - Attributes:
+        - `analysisID`: Int - A unique identifier for each financial analysis entry.
+        - `userID`: Int - Identifier linking the analysis to a specific user.
+        - `month`: Date - The specific month being analyzed.
+        - `totalIncome`: Float - The sum of all income for the month.
+        - `totalExpenses`: Float - The sum of all expenses for the month.
+        - `netSavings`: Float - The difference between total income and total expenses.
+        - `budgetVariance`: Float - The difference between the set budget and actual expenses.
+    - Methods:
+        - `generateMonthlySummary()`: Creates a detailed financial report for the month.
+        - `calculateNetSavings()`: Computes the net savings based on income and expenses.
+        - `calculateBudgetVariance()`: Determines the difference between planned and actual spending.
 
 **Relationship:**
 
