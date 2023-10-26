@@ -341,18 +341,13 @@ Transaction
 **Deleting a Budget** 18. **EndUser** -> **BudgetInterface**: `clickDeleteBudgetOption(budgetID)` - Description: The EndUser selects a specific budget to delete.
 
 19. **BudgetInterface** -> **BudgetManager**: `confirmDeletion()`
-    
     - Description: The system asks the EndUser for deletion confirmation.
 20. **EndUser** -> **BudgetManager**: `confirm()`
-    
     - Description: The EndUser confirms the budget deletion.
 21. **BudgetManager** -> **Budget**: `deleteBudget(budgetID)`
-    
     - Description: The `deleteBudget` method of the Budget class is invoked.
 22. **Budget** -> **Database**: `removeBudget()`
-    
     - Description: The specified budget is removed from the database.
 23. **Database** -> **BudgetManager**: `deleteConfirmation()`
-    
     - Description: The database sends a confirmation of the successful deletion.
 
