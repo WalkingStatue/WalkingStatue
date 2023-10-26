@@ -130,3 +130,75 @@
 12. **Database** -> **TransactionManager**: `addConfirmation()`
     
     - Description: The database sends a confirmation of the successful addition.
+   
+	**Editing an Income Transaction** 13. **EndUser** -> **TransactionInterface**: `clickEditIncomeOption(transactionID)` - Description: The EndUser selects an income transaction to edit.
+
+14. **TransactionInterface** -> **TransactionManager**: `initiateEditIncome(transactionID)`
+    
+    - Description: The system presents the current details of the selected income transaction.
+15. **EndUser** -> **TransactionManager**: `inputEditedIncomeDetails(newDetails)`
+    
+    - Description: The EndUser modifies the income details.
+16. **TransactionManager** -> **Income**: `editIncome(transactionID, newDetails)`
+    
+    - Description: The `editIncome` method of the Income subclass is invoked.
+17. **Income** -> **Database**: `updateIncomeDetails()`
+    
+    - Description: The updated income details are stored in the database.
+18. **Database** -> **TransactionManager**: `editConfirmation()`
+    
+    - Description: The database sends a confirmation of the successful edit.
+
+**Editing an Expense Transaction** 19. **EndUser** -> **TransactionInterface**: `clickEditExpenseOption(transactionID)` - Description: The EndUser selects an expense transaction to edit.
+
+20. **TransactionInterface** -> **TransactionManager**: `initiateEditExpense(transactionID)`
+    
+    - Description: The system presents the current details of the selected expense transaction.
+21. **EndUser** -> **TransactionManager**: `inputEditedExpenseDetails(newDetails)`
+    
+    - Description: The EndUser modifies the expense details.
+22. **TransactionManager** -> **Expense**: `editExpense(transactionID, newDetails)`
+    
+    - Description: The `editExpense` method of the Expense subclass is invoked.
+23. **Expense** -> **Database**: `updateExpenseDetails()`
+    
+    - Description: The updated expense details are stored in the database.
+24. **Database** -> **TransactionManager**: `editConfirmation()`
+    
+    - Description: The database sends a confirmation of the successful edit.
+
+**Deleting an Income Transaction** 25. **EndUser** -> **TransactionInterface**: `clickDeleteIncomeOption(transactionID)` - Description: The EndUser selects an income transaction to delete.
+
+26. **TransactionInterface** -> **TransactionManager**: `confirmIncomeDeletion()`
+    
+    - Description: The system asks the EndUser for deletion confirmation for the income transaction.
+27. **EndUser** -> **TransactionManager**: `confirm()`
+    
+    - Description: The EndUser confirms the income transaction deletion.
+28. **TransactionManager** -> **Income**: `deleteIncome(transactionID)`
+    
+    - Description: The `deleteIncome` method of the Income subclass is invoked.
+29. **Income** -> **Database**: `removeIncome()`
+    
+    - Description: The specified income transaction is removed from the database.
+30. **Database** -> **TransactionManager**: `deleteConfirmation()`
+    
+    - Description: The database sends a confirmation of the successful deletion.
+
+**Deleting an Expense Transaction** 31. **EndUser** -> **TransactionInterface**: `clickDeleteExpenseOption(transactionID)` - Description: The EndUser selects an expense transaction to delete.
+
+32. **TransactionInterface** -> **TransactionManager**: `confirmExpenseDeletion()`
+    
+    - Description: The system asks the EndUser for deletion confirmation for the expense transaction.
+33. **EndUser** -> **TransactionManager**: `confirm()`
+    
+    - Description: The EndUser confirms the expense transaction deletion.
+34. **TransactionManager** -> **Expense**: `deleteExpense(transactionID)`
+    
+    - Description: The `deleteExpense` method of the Expense subclass is invoked.
+35. **Expense** -> **Database**: `removeExpense()`
+    
+    - Description: The specified expense transaction is removed from the database.
+36. **Database** -> **TransactionManager**: `deleteConfirmation()`
+    
+    - Description: The database sends a confirmation of the successful deletion.- 
