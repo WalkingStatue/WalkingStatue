@@ -76,8 +76,7 @@
     
     - Description: The database sends a confirmation of the successful update.
 
-
-
+Transaction
 **Sequence Diagram: Transaction Operations (Add, Edit, Delete) with Subclasses**
 
 **Actors and Objects**:
