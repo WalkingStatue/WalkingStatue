@@ -11,8 +11,12 @@
             "id": "544d129b84db8b57",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "001 Project/UML.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "001 Project/UML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "001 Project/UML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "001 Project/UML.md"
+              }
             }
           },
           {
@@ -149,8 +157,11 @@
   },
   "active": "544d129b84db8b57",
   "lastOpenFiles": [
-    "001 Project/Use case diagram.md",
+    "001 Project/activity diagram.md",
     "001 Project/UML.md",
+    "001 Project/sequence diagram.md",
+    "001 Project/class diagram.md",
+    "001 Project/Use case diagram.md",
     "002 Flutter/Index.md",
     "002 Flutter/Hello World.md",
     "002 Flutter/Setup.md",
