@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "002 Flutter/Index.md",
+                "file": "001 Project/UML.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "002 Flutter/Index.md",
+                "file": "001 Project/UML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "002 Flutter/Index.md",
+                "file": "001 Project/UML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "002 Flutter/Index.md"
+                "file": "001 Project/UML.md"
               }
             }
           },
@@ -142,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,8 +157,9 @@
   },
   "active": "544d129b84db8b57",
   "lastOpenFiles": [
-    "002 Flutter/Hello World.md",
     "002 Flutter/Index.md",
+    "001 Project/UML.md",
+    "002 Flutter/Hello World.md",
     "002 Flutter/Setup.md",
     "002 Flutter/Introduction.md",
     "Untitled",
