@@ -1,4 +1,4 @@
-Class Diagram for Personal Finance Management App:
+#Class Diagram for Personal Finance Management App:
 
 1. **Class: User**
     - Attributes:
