@@ -12,46 +12,36 @@
 
 **User Registration**
 
-1. **EndUser** -> **UserInterface (UI)**: `clickRegisterOption()`
-    
+1. **EndUser** -> **UserInterface (UI)**: `clickRegisterOption()` 
     - Description: The EndUser chooses to register through the interface.
 2. **UserInterface (UI)** -> **UserSystem**: `initiateRegistration()`
-    
     - Description: The system presents a registration form.
 3. **EndUser** -> **UserSystem**: `inputRegistrationDetails(username, email, password)`
-    
     - Description: The EndUser fills in registration details.
 4. **UserSystem** -> **User**: `register(username, email, password)`
-    
     - Description: The `register` method of the User class is invoked.
 5. **User** -> **Database**: `storeUserDetails()`
-    
     - Description: User details are stored in the database.
 6. **Database** -> **UserSystem**: `confirmation()`
-    
     - Description: The database sends a confirmation of the successful registration.
 
-**User Login** 7. **EndUser** -> **UserInterface (UI)**: `clickLoginOption()` - Description: The EndUser chooses to log in.
-
-8. **UserInterface (UI)** -> **UserSystem**: `initiateLogin()`
-    
+**User Login**
+1. **EndUser** -> **UserInterface (UI)**: `clickLoginOption()` - Description: The EndUser chooses to log in.
+2. **UserInterface (UI)** -> **UserSystem**: `initiateLogin()`
     - Description: The system presents a login form.
 9. **EndUser** -> **UserSystem**: `inputLoginDetails(username, password)`
-    
     - Description: The EndUser fills in login details.
 10. **UserSystem** -> **User**: `login(username, password)`
-    
     - Description: The `login` method of the User class is invoked.
 11. **User** -> **Database**: `checkCredentials()`
-    
     - Description: The system checks the provided credentials in the database.
 12. **Database** -> **UserSystem**: `loginResult(success/failure)`
-    
     - Description: The database sends the result of the login attempt.
 
-**User Logout** 13. **EndUser** -> **UserInterface (UI)**: `clickLogoutOption()` - Description: The EndUser chooses to log out.
-
-14. **UserInterface (UI)** -> **UserSystem**: `initiateLogout()`
+**User Logout**
+13. **EndUser** -> **UserInterface (UI)**: `clickLogoutOption()`-
+	- Description: The EndUser chooses to log out.
+16. **UserInterface (UI)** -> **UserSystem**: `initiateLogout()`
     
     - Description: Initiates the logout process.
 15. **UserSystem** -> **User**: `logout()`
