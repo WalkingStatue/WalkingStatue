@@ -98,7 +98,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0413 Sequence diagram.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0413 Sequence diagram.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +135,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0413 Sequence diagram.md"
-              }
+              "state": {}
             }
           },
           {
@@ -159,7 +155,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -175,8 +171,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b0237b15cd7dc597",
+  "active": "1e8db629d22c6db7",
   "lastOpenFiles": [
+    "001 Project/0400 Chapter 4/ 0410 UML/ 0413 Sequence diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML.md",
     "001 Project/Index.md",
     "001 Project/0100 Chapter 1/0120 system_details/0121 existing_system.md",
@@ -206,7 +203,6 @@
     "001 Project/0300 Chapter 3/0310 feasibility_study",
     "001 Project/0300 Chapter 3",
     "001 Project/0200 Chapter 2",
-    "001 Project/0400 Chapter 4/ 0410 UML 1.md",
     "001 Project/0400 Chapter 4/ 0410 UML",
     "001 Project/ 0410 UML",
     "001 Project/0400 Chapter 4",
