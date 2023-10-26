@@ -1,3 +1,7 @@
 [
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-plugin-toc",
+  "note-refactor-obsidian",
+  "obsidian-linter",
+  "obsidian-admonition"
 ]
