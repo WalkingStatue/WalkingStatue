@@ -229,64 +229,59 @@
 
 **Flow**:
 
-**setting a budget**
-1. **enduser** -> **budgetinterface**: `clicksetbudgetoption()`
-- description: the enduser selects the option to set a new budget.
-2. **budgetinterface** -> **budgetmanager**: `initiatesetbudget()`
-- description: the system presents a form to set a new budget.
-3. **enduser** -> **budgetmanager**: `inputbudgetdetails(amount, category, duration)`
-- description: the enduser provides the necessary details for the new budget.
-4. **budgetmanager** -> **budget**: `setbudget(amount, category, duration)`
-- description: the `setbudget` method of the budget class is invoked.
-5. **budget** -> **database**: `storebudgetdetails()`
-- description: budget details are stored in the database.
-6. **database** -> **budgetmanager**: `setconfirmation()`
-- description: the database sends a confirmation of the successful budget setup.
+**Setting a Budget**
+1. **EndUser** -> **BudgetInterface**: `clickSetBudgetOption()`
+    - Description: The EndUser selects the option to set a new budget.
+2. **BudgetInterface** -> **BudgetManager**: `initiateSetBudget()`
+    - Description: The system presents a form to set a new budget.
+3. **EndUser** -> **BudgetManager**: `inputBudgetDetails(amount, category, duration)`
+    - Description: The EndUser provides the necessary details for the new budget.
+4. **BudgetManager** -> **Budget**: `setBudget(amount, category, duration)`
+    - Description: The `setBudget` method of the Budget class is invoked.
+5. **Budget** -> **Database**: `storeBudgetDetails()`
+    - Description: Budget details are stored in the database.
+6. **Database** -> **BudgetManager**: `setConfirmation()`
+    - Description: The database sends a confirmation of the successful budget setup.
 
-**Editing a Budget** 7. **EndUser** -> **BudgetInterface**: `clickEditBudgetOption(budgetID)` - Description: The EndUser selects a specific budget to edit.
-
-8. **BudgetInterface** -> **BudgetManager**: `initiateEditBudget(budgetID)`
-    
+**Editing a Budget** 
+1. **EndUser** -> **BudgetInterface**: `clickEditBudgetOption(budgetID)`
+    - Description: The EndUser selects a specific budget to edit.
+2. **BudgetInterface** -> **BudgetManager**: `initiateEditBudget(budgetID)`
     - Description: The system presents the current details of the selected budget.
-9. **EndUser** -> **BudgetManager**: `inputEditedBudgetDetails(newDetails)`
-    
+3. **EndUser** -> **BudgetManager**: `inputEditedBudgetDetails(newDetails)`
     - Description: The EndUser modifies the budget details.
-10. **BudgetManager** -> **Budget**: `editBudget(budgetID, newDetails)`
-    
+4. **BudgetManager** -> **Budget**: `editBudget(budgetID, newDetails)`
     - Description: The `editBudget` method of the Budget class is invoked.
-11. **Budget** -> **Database**: `updateBudgetDetails()`
-    
+5. **Budget** -> **Database**: `updateBudgetDetails()`
     - Description: The updated budget details are stored in the database.
-12. **Database** -> **BudgetManager**: `editConfirmation()`
-    
+6. **Database** -> **BudgetManager**: `editConfirmation()`
     - Description: The database sends a confirmation of the successful edit.
 
-**Viewing a Budget** 13. **EndUser** -> **BudgetInterface**: `clickViewBudgetOption()` - Description: The EndUser selects the option to view budgets.
-
-14. **BudgetInterface** -> **BudgetManager**: `fetchBudgets()`
-    
+**Viewing a Budget** 
+1. **EndUser** -> **BudgetInterface**: `clickViewBudgetOption()` 
+    - Description: The EndUser selects the option to view budgets.
+2. **BudgetInterface** -> **BudgetManager**: `fetchBudgets()`
     - Description: The interface requests a list of all budgets.
-15. **BudgetManager** -> **Database**: `retrieveBudgets()`
-    
+3. **BudgetManager** -> **Database**: `retrieveBudgets()`
     - Description: A request to retrieve all budget data is made to the database.
-16. **Database** -> **BudgetManager**: `returnBudgets(budgetsList)`
-    
+4. **Database** -> **BudgetManager**: `returnBudgets(budgetsList)`
     - Description: The database returns a list of all budgets.
-17. **BudgetManager** -> **BudgetInterface**: `displayBudgets(budgetsList)`
-    
+5. **BudgetManager** -> **BudgetInterface**: `displayBudgets(budgetsList)`
     - Description: The fetched budgets are displayed to the EndUser.
 
-**Deleting a Budget** 18. **EndUser** -> **BudgetInterface**: `clickDeleteBudgetOption(budgetID)` - Description: The EndUser selects a specific budget to delete.
 
-19. **BudgetInterface** -> **BudgetManager**: `confirmDeletion()`
+**Deleting a Budget** 
+1. **EndUser** -> **BudgetInterface**: `clickDeleteBudgetOption(budgetID)`
+    - Description: The EndUser selects a specific budget to delete.
+2. **BudgetInterface** -> **BudgetManager**: `confirmDeletion()`
     - Description: The system asks the EndUser for deletion confirmation.
-20. **EndUser** -> **BudgetManager**: `confirm()`
+3. **EndUser** -> **BudgetManager**: `confirm()`
     - Description: The EndUser confirms the budget deletion.
-21. **BudgetManager** -> **Budget**: `deleteBudget(budgetID)`
+4. **BudgetManager** -> **Budget**: `deleteBudget(budgetID)`
     - Description: The `deleteBudget` method of the Budget class is invoked.
-22. **Budget** -> **Database**: `removeBudget()`
+5. **Budget** -> **Database**: `removeBudget()`
     - Description: The specified budget is removed from the database.
-23. **Database** -> **BudgetManager**: `deleteConfirmation()`
+6. **Database** -> **BudgetManager**: `deleteConfirmation()`
     - Description: The database sends a confirmation of the successful deletion.
 
 **Sequence Diagram: Financial Goal Operations (Set, Edit, View, Achieve, Delete)**
@@ -304,40 +299,30 @@
 **Setting a Financial Goal**
 
 1. **EndUser** -> **GoalInterface**: `clickSetGoalOption()`
-    
     - Description: The EndUser selects the option to set a new financial goal.
 2. **GoalInterface** -> **GoalManager**: `initiateSetGoal()`
-    
     - Description: The system presents a form to set a new financial goal.
 3. **EndUser** -> **GoalManager**: `inputGoalDetails(title, amount, deadline)`
-    
     - Description: The EndUser provides the necessary details for the new goal.
 4. **GoalManager** -> **FinancialGoal**: `setGoal(title, amount, deadline)`
-    
     - Description: The `setGoal` method of the FinancialGoal class is invoked.
 5. **FinancialGoal** -> **Database**: `storeGoalDetails()`
-    
     - Description: Goal details are stored in the database.
 6. **Database** -> **GoalManager**: `setConfirmation()`
-    
     - Description: The database sends a confirmation of the successful goal setup.
 
-**Editing a Financial Goal** 7. **EndUser** -> **GoalInterface**: `clickEditGoalOption(goalID)` - Description: The EndUser selects a specific goal to edit.
-
-8. **GoalInterface** -> **GoalManager**: `initiateEditGoal(goalID)`
-    
+**Editing a Financial Goal** 
+7. **EndUser** -> **GoalInterface**: `clickEditGoalOption(goalID)` 
+    - Description: The EndUser selects a specific goal to edit.
+1. **GoalInterface** -> **GoalManager**: `initiateEditGoal(goalID)`
     - Description: The system presents the current details of the selected goal.
 9. **EndUser** -> **GoalManager**: `inputEditedGoalDetails(newDetails)`
-    
     - Description: The EndUser modifies the goal details.
 10. **GoalManager** -> **FinancialGoal**: `editGoal(goalID, newDetails)`
-    
     - Description: The `editGoal` method of the FinancialGoal class is invoked.
 11. **FinancialGoal** -> **Database**: `updateGoalDetails()`
-    
     - Description: The updated goal details are stored in the database.
 12. **Database** -> **GoalManager**: `editConfirmation()`
-    
     - Description: The database sends a confirmation of the successful edit.
 
 **Viewing Financial Goals** 
