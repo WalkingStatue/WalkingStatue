@@ -84,8 +84,4 @@
 
 **Relationships:**
 
-- **User** has a one-to-many relationship with **Transaction**, **FinancialGoal**, and **FinancialAnalysis**.
-  
-- **Transaction** is a superclass, with **Income** and **Expense** as subclasses, showcasing inheritance.
-  
-- **Transaction** and **Budget** have associations with **Category**.
+- *
