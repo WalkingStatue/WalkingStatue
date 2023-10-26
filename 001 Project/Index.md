@@ -26,7 +26,7 @@
 
 
 **Chapter - 4**
-[[001 Project/0400 Chapter 4/ 0410 UML/]]
+[[001 Project/0400 Chapter 4/ 0410 UML]]
 [[001 Project/0400 Chapter 4/ 0420 system_flow_diagram]]
 [[001 Project/0400 Chapter 4/ 0430 data_dictionary]]
 [[001 Project/0400 Chapter 4/ 0440 user_interface]]
