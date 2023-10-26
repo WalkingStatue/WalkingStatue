@@ -155,13 +155,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "544d129b84db8b57",
+  "active": "d8f91048e6296c4b",
   "lastOpenFiles": [
+    "001 Project/UML",
+    "001 Project/Untitled.md",
+    "001 Project/UML.md",
+    "001 Project/state diagram.md",
     "001 Project/Use case diagram.md",
     "001 Use case diagram.md",
-    "001 Project/UML.md",
     "001 Project/class diagram.md",
-    "001 Project/activity diagram.md",
+    "001 Project/UML/activity diagram.md",
     "001 Project/sequence diagram.md",
     "002 Flutter/Index.md",
     "002 Flutter/Hello World.md",
