@@ -176,58 +176,44 @@
 **Adding a Category**
 
 1. **EndUser** -> **CategoryInterface**: `clickAddCategoryOption()`
-    
     - Description: The EndUser selects the option to add a new category.
 2. **CategoryInterface** -> **CategoryManager**: `initiateAddCategory()`
-    
     - Description: The system presents a form for adding a new category.
 3. **EndUser** -> **CategoryManager**: `inputCategoryDetails(name, description)`
-    
     - Description: The EndUser provides the necessary category details.
 4. **CategoryManager** -> **Category**: `addCategory(name, description)`
-    
     - Description: The `addCategory` method of the Category class is invoked.
 5. **Category** -> **Database**: `storeCategoryDetails()`
-    
     - Description: Category details are stored in the database.
 6. **Database** -> **CategoryManager**: `addConfirmation()`
-    
     - Description: The database sends a confirmation of the successful addition.
 
-**Editing a Category** 7. **EndUser** -> **CategoryInterface**: `clickEditCategoryOption(categoryID)` - Description: The EndUser selects a category to edit.
-
-8. **CategoryInterface** -> **CategoryManager**: `initiateEditCategory(categoryID)`
-    
+**Editing a Category** 
+1. **EndUser** -> **CategoryInterface**: `clickEditCategoryOption(categoryID)` 
+    - Description: The EndUser selects a category to edit.
+2. **CategoryInterface** -> **CategoryManager**: `initiateEditCategory(categoryID)`
     - Description: The system presents the current details of the selected category.
-9. **EndUser** -> **CategoryManager**: `inputEditedCategoryDetails(newDetails)`
-    
+3. **EndUser** -> **CategoryManager**: `inputEditedCategoryDetails(newDetails)`
     - Description: The EndUser modifies the category details.
-10. **CategoryManager** -> **Category**: `editCategory(categoryID, newDetails)`
-    
+4. **CategoryManager** -> **Category**: `editCategory(categoryID, newDetails)`
     - Description: The `editCategory` method of the Category class is invoked.
-11. **Category** -> **Database**: `updateCategoryDetails()`
-    
+5. **Category** -> **Database**: `updateCategoryDetails()`
     - Description: The updated category details are stored in the database.
-12. **Database** -> **CategoryManager**: `editConfirmation()`
-    
+6. **Database** -> **CategoryManager**: `editConfirmation()`
     - Description: The database sends a confirmation of the successful edit.
 
-**Deleting a Category** 13. **EndUser** -> **CategoryInterface**: `clickDeleteCategoryOption(categoryID)` - Description: The EndUser selects a category to delete.
-
-14. **CategoryInterface** -> **CategoryManager**: `confirmDeletion()`
-    
+**Deleting a Category** 
+1. **EndUser** -> **CategoryInterface**: `clickDeleteCategoryOption(categoryID)` 
+    - Description: The EndUser selects a category to delete.
+2. **CategoryInterface** -> **CategoryManager**: `confirmDeletion()`
     - Description: The system asks the EndUser for deletion confirmation.
-15. **EndUser** -> **CategoryManager**: `confirm()`
-    
+3. **EndUser** -> **CategoryManager**: `confirm()`
     - Description: The EndUser confirms the category deletion.
-16. **CategoryManager** -> **Category**: `deleteCategory(categoryID)`
-    
+4. **CategoryManager** -> **Category**: `deleteCategory(categoryID)`
     - Description: The `deleteCategory` method of the Category class is invoked.
-17. **Category** -> **Database**: `removeCategory()`
-    
+5. **Category** -> **Database**: `removeCategory()`
     - Description: The specified category is removed from the database.
-18. **Database** -> **CategoryManager**: `deleteConfirmation()`
-    
+6. **Database** -> **CategoryManager**: `deleteConfirmation()`
     - Description: The database sends a confirmation of the successful deletion.
 
 
@@ -243,26 +229,19 @@
 
 **Flow**:
 
-**Setting a Budget**
-
-1. **EndUser** -> **BudgetInterface**: `clickSetBudgetOption()`
-    
-    - Description: The EndUser selects the option to set a new budget.
-2. **BudgetInterface** -> **BudgetManager**: `initiateSetBudget()`
-    
-    - Description: The system presents a form to set a new budget.
-3. **EndUser** -> **BudgetManager**: `inputBudgetDetails(amount, category, duration)`
-    
-    - Description: The EndUser provides the necessary details for the new budget.
-4. **BudgetManager** -> **Budget**: `setBudget(amount, category, duration)`
-    
-    - Description: The `setBudget` method of the Budget class is invoked.
-5. **Budget** -> **Database**: `storeBudgetDetails()`
-    
-    - Description: Budget details are stored in the database.
-6. **Database** -> **BudgetManager**: `setConfirmation()`
-    
-    - Description: The database sends a confirmation of the successful budget setup.
+**setting a budget**
+1. **enduser** -> **budgetinterface**: `clicksetbudgetoption()`
+- description: the enduser selects the option to set a new budget.
+2. **budgetinterface** -> **budgetmanager**: `initiatesetbudget()`
+- description: the system presents a form to set a new budget.
+3. **enduser** -> **budgetmanager**: `inputbudgetdetails(amount, category, duration)`
+- description: the enduser provides the necessary details for the new budget.
+4. **budgetmanager** -> **budget**: `setbudget(amount, category, duration)`
+- description: the `setbudget` method of the budget class is invoked.
+5. **budget** -> **database**: `storebudgetdetails()`
+- description: budget details are stored in the database.
+6. **database** -> **budgetmanager**: `setconfirmation()`
+- description: the database sends a confirmation of the successful budget setup.
 
 **Editing a Budget** 7. **EndUser** -> **BudgetInterface**: `clickEditBudgetOption(budgetID)` - Description: The EndUser selects a specific budget to edit.
 
