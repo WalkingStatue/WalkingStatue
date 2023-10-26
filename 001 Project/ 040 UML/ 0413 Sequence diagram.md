@@ -271,3 +271,88 @@ Transaction
     
     - Description: The database sends a confirmation of the successful deletion.
 
+
+**Sequence Diagram: Budget Operations (Set, Edit, View, Delete)**
+
+**Actors and Objects**:
+
+1. EndUser (The person using the system)
+2. BudgetInterface (UI designed specifically for budget operations)
+3. BudgetManager (Manages interactions involving the Budget class and its methods)
+4. Budget
+5. Database
+
+**Flow**:
+
+**Setting a Budget**
+
+1. **EndUser** -> **BudgetInterface**: `clickSetBudgetOption()`
+    
+    - Description: The EndUser selects the option to set a new budget.
+2. **BudgetInterface** -> **BudgetManager**: `initiateSetBudget()`
+    
+    - Description: The system presents a form to set a new budget.
+3. **EndUser** -> **BudgetManager**: `inputBudgetDetails(amount, category, duration)`
+    
+    - Description: The EndUser provides the necessary details for the new budget.
+4. **BudgetManager** -> **Budget**: `setBudget(amount, category, duration)`
+    
+    - Description: The `setBudget` method of the Budget class is invoked.
+5. **Budget** -> **Database**: `storeBudgetDetails()`
+    
+    - Description: Budget details are stored in the database.
+6. **Database** -> **BudgetManager**: `setConfirmation()`
+    
+    - Description: The database sends a confirmation of the successful budget setup.
+
+**Editing a Budget** 7. **EndUser** -> **BudgetInterface**: `clickEditBudgetOption(budgetID)` - Description: The EndUser selects a specific budget to edit.
+
+8. **BudgetInterface** -> **BudgetManager**: `initiateEditBudget(budgetID)`
+    
+    - Description: The system presents the current details of the selected budget.
+9. **EndUser** -> **BudgetManager**: `inputEditedBudgetDetails(newDetails)`
+    
+    - Description: The EndUser modifies the budget details.
+10. **BudgetManager** -> **Budget**: `editBudget(budgetID, newDetails)`
+    
+    - Description: The `editBudget` method of the Budget class is invoked.
+11. **Budget** -> **Database**: `updateBudgetDetails()`
+    
+    - Description: The updated budget details are stored in the database.
+12. **Database** -> **BudgetManager**: `editConfirmation()`
+    
+    - Description: The database sends a confirmation of the successful edit.
+
+**Viewing a Budget** 13. **EndUser** -> **BudgetInterface**: `clickViewBudgetOption()` - Description: The EndUser selects the option to view budgets.
+
+14. **BudgetInterface** -> **BudgetManager**: `fetchBudgets()`
+    
+    - Description: The interface requests a list of all budgets.
+15. **BudgetManager** -> **Database**: `retrieveBudgets()`
+    
+    - Description: A request to retrieve all budget data is made to the database.
+16. **Database** -> **BudgetManager**: `returnBudgets(budgetsList)`
+    
+    - Description: The database returns a list of all budgets.
+17. **BudgetManager** -> **BudgetInterface**: `displayBudgets(budgetsList)`
+    
+    - Description: The fetched budgets are displayed to the EndUser.
+
+**Deleting a Budget** 18. **EndUser** -> **BudgetInterface**: `clickDeleteBudgetOption(budgetID)` - Description: The EndUser selects a specific budget to delete.
+
+19. **BudgetInterface** -> **BudgetManager**: `confirmDeletion()`
+    
+    - Description: The system asks the EndUser for deletion confirmation.
+20. **EndUser** -> **BudgetManager**: `confirm()`
+    
+    - Description: The EndUser confirms the budget deletion.
+21. **BudgetManager** -> **Budget**: `deleteBudget(budgetID)`
+    
+    - Description: The `deleteBudget` method of the Budget class is invoked.
+22. **Budget** -> **Database**: `removeBudget()`
+    
+    - Description: The specified budget is removed from the database.
+23. **Database** -> **BudgetManager**: `deleteConfirmation()`
+    
+    - Description: The database sends a confirmation of the successful deletion.
+
