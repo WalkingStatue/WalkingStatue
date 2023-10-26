@@ -21,7 +21,13 @@
 [[001 Project/0300 Chapter 3/0320 hardware_software_requriments]]
 [[001 Project/0300 Chapter 3/0330 system_planning]]
 [[001 Project/0300 Chapter 3/0330 system_planning/0331 work_breakdown_structure]]
-[[001 Project/0300 Chapter 3/0120 system_planning/0332 gantt_chart]]
-[[001 Project/0300 Chapter 3/0130 scope_of_system]]
-[[001 Project/0300 Chapter 3/0140 objectives]]
+[[001 Project/0300 Chapter 3/0330 system_planning/0332 gantt_chart]]
+[[001 Project/0300 Chapter 3/0340 process_model]]
+
+
 **Chapter - 4**
+[[001 Project/0400 Chapter 4/ 0410 UML/]]
+[[001 Project/0400 Chapter 4/ 0420 system_flow_diagram]]
+[[001 Project/0400 Chapter 4/ 0430 data_dictionary]]
+[[001 Project/0400 Chapter 4/ 0440 user_interface]]
+[[001 Project/0400 Chapter 4/ 0450 system_navigation]]
