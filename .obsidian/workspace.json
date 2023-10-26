@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001 Project/ 040 UML/ 0413 Sequence diagram.md",
+                "file": "001 Project/ 040 UML/ 0412 Class diagram.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001 Project/ 040 UML/ 0413 Sequence diagram.md",
+                "file": "001 Project/ 040 UML/ 0412 Class diagram.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "001 Project/ 040 UML/ 0413 Sequence diagram.md",
+                "file": "001 Project/ 040 UML/ 0412 Class diagram.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "001 Project/ 040 UML/ 0413 Sequence diagram.md"
+                "file": "001 Project/ 040 UML/ 0412 Class diagram.md"
               }
             }
           },
@@ -136,13 +136,21 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "1e8db629d22c6db7",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {}
+            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 481.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -155,10 +163,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "58bd0d882c64b431",
+  "active": "571d67e44836d7a3",
   "lastOpenFiles": [
-    "001 Project/ 040 UML/ 0412 Class diagram.md",
     "001 Project/ 040 UML/ 0413 Sequence diagram.md",
+    "001 Project/ 040 UML/ 0412 Class diagram.md",
     "001 Project/ 040 UML/ 0411 Use case diagram.md",
     "001 Project/ 040 UML/ 0411Use case diagram.md",
     "001 Project/ 040 UML/0410 UML.md",
