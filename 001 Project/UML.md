@@ -1,5 +1,0 @@
-[[001 Project/UML/Use case diagram]]
-[[001 Project/UML/class diagram]]
-[[001 Project/UML/sequence diagram]]
-[[001 Project/UML/activity diagram]]
-[[001 Project/UML/state diagram]]
