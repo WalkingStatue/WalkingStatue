@@ -37,102 +37,96 @@ User           System         UserClass       Database
 
 **Sequence Diagram: Transaction Operations (Add, Edit, Delete) with Subclasses**
 
-**Actors and Objects**:
+**Sequence Diagram: Transaction Operations**
 
-1. EndUser (The person using the system)
-2. TransactionInterface (UI specifically designed for transactions)
-3. TransactionManager (Manages interactions involving the Transaction class and its methods)
-4. Transaction
-5. Income (Subclass of Transaction)
-6. Expense (Subclass of Transaction)
-7. Database
+User            System            Transaction      Database
+ |                |                  |                 |
+ |--- Access system --------------->|                 |
+ |<-- Display main menu ------------|                 |
+ |--- Add new transaction -------->|                 |
+ |<-- Display transaction form ----|                 |
+ |--- Enter transaction details ----|-------------->|
+ |                |--- addTransaction()---|->      |
+ |                |                  |--- Store transaction ------->|
+ |                |                  |<-- Confirmation ------------|
+ |<-- Transaction added confirmation-----------------------------|
+ |--- Edit existing transaction --->|                 |
+ |<-- Display transaction list ----|                 |
+ |--- Select & update details ------|-------------->|
+ |                |--- editTransaction()---|->     |
+ |                |                  |--- Update transaction ------>|
+ |                |                  |<-- Update confirmation -----|
+ |<-- Transaction updated confirmation--------------------------|
+ |--- Delete a transaction -------->|                 |
+ |<-- Display transaction list ----|                 |
+ |--- Select transaction to delete --|-------------->|
+ |                |--- deleteTransaction()--|->    |
+ |                |                  |--- Remove transaction ------>|
+ |                |                  |<-- Deletion confirmation --|
+ |<-- Transaction deleted confirmation--------------------------|
 
-**Flow**:
+**Sequence Diagram: Income and Expense Operations
 
-**Adding an Income Transaction**
+User            System            Income/Expense      Database
+ |                |                    |                   |
+ |--- Access system ----------------->|                   |
+ |<-- Display main menu --------------|                   |
 
-1. **EndUser** -> **TransactionInterface**: `clickAddIncomeOption()`
-    - Description: The EndUser selects the option to add a new income transaction.
-2. **TransactionInterface** -> **TransactionManager**: `initiateAddIncome()`
-    - Description: The system presents a form for adding a new income transaction.
-3. **EndUser** -> **TransactionManager**: `inputIncomeDetails(amount, date, source, description)`
-    - Description: The EndUser provides the necessary income details.
-4. **TransactionManager** -> **Income**: `addIncome(amount, date, source, description)`
-    - Description: The `addIncome` method of the Income subclass is invoked.
-5. **Income** -> **Database**: `storeIncomeDetails()`
-    - Description: Income details are stored in the database.
-6. **Database** -> **TransactionManager**: `addConfirmation()`
-    - Description: The database sends a confirmation of the successful addition.
+** Add Income **
+ |--- Add new income --------------->|                   |
+ |<-- Display income form -----------|                   |
+ |--- Enter income details & source --|---------------->|
+ |                |--- addTransaction() (from Income) --|->  |
+ |                |                    |--- Store income ------->|
+ |                |                    |<-- Confirmation --------|
+ |<-- Income added confirmation -------------------------------|
 
-**Adding an Expense Transaction** 
-1. **EndUser** -> **TransactionInterface**: `clickAddExpenseOption()` 
-    - Description: The EndUser selects the option to add a new expense transaction.
-2. **TransactionInterface** -> **TransactionManager**:`initiateAddExpense()`
-    - Description: The system presents a form for adding a new expense transaction.
-3. **EndUser** -> **TransactionManager**: `inputExpenseDetails(amount, date, category, description)`
-    - Description: The EndUser provides the necessary expense details.
-4. **TransactionManager** -> **Expense**: `addExpense(amount, date, category, description)`
-    - Description: The `addExpense` method of the Expense subclass is invoked.
-5. **Expense** -> **Database**: `storeExpenseDetails()`
-    - Description: Expense details are stored in the database.
-6. **Database** -> **TransactionManager**: `addConfirmation()`
-    - Description: The database sends a confirmation of the successful addition.
-   
-**Editing an Income Transaction** 
-1. **EndUser** -> **TransactionInterface**: `clickEditIncomeOption(transactionID)` 
-	- Description: The EndUser selects an income transaction to edit.
-2. **TransactionInterface** -> **TransactionManager**: `initiateEditIncome(transactionID)`
-    - Description: The system presents the current details of the selected income transaction.
-3. **EndUser** -> **TransactionManager**: `inputEditedIncomeDetails(newDetails)`
-    - Description: The EndUser modifies the income details.
-4. **TransactionManager** -> **Income**: `editIncome(transactionID, newDetails)`
-    - Description: The `editIncome` method of the Income subclass is invoked.
-5. **Income** -> **Database**: `updateIncomeDetails()`
-    - Description: The updated income details are stored in the database.
-6. **Database** -> **TransactionManager**: `editConfirmation()`
-    - Description: The database sends a confirmation of the successful edit.
+** Add Expense **
+ |--- Add new expense -------------->|                   |
+ |<-- Display expense form ---------|                   |
+ |--- Enter expense details & destination |------------>|
+ |                |--- addTransaction() (from Expense) -|->  |
+ |                |                    |--- Store expense ------>|
+ |                |                    |<-- Confirmation -------|
+ |<-- Expense added confirmation ----------------------------|
 
-**Editing an Expense Transaction** 
-1. **EndUser** -> **TransactionInterface**: `clickEditExpenseOption(transactionID)` 
-    - Description: The EndUser selects an expense transaction to edit.
-2. **TransactionInterface** -> **TransactionManager**: `initiateEditExpense(transactionID)`
-    - Description: The system presents the current details of the selected expense transaction.
-3. **EndUser** -> **TransactionManager**: `inputEditedExpenseDetails(newDetails)`
-    - Description: The EndUser modifies the expense details.
-4. **TransactionManager** -> **Expense**: `editExpense(transactionID, newDetails)`
-    - Description: The `editExpense` method of the Expense subclass is invoked.
-5. **Expense** -> **Database**: `updateExpenseDetails()`
-    - Description: The updated expense details are stored in the database.
-6. **Database** -> **TransactionManager**: `editConfirmation()`
-    - Description: The database sends a confirmation of the successful edit.
+** Edit Income **
+ |--- Edit existing income --------->|                   |
+ |<-- Display income list -----------|                   |
+ |--- Select & update income details --|--------------->|
+ |                |--- editTransaction() (from Income) -|->  |
+ |                |                    |--- Update income ------->|
+ |                |                    |<-- Update confirmation -|
+ |<-- Income updated confirmation ----------------------------|
 
-**Deleting an Income Transaction** 
-1. **EndUser** -> **TransactionInterface**: `clickDeleteIncomeOption(transactionID)` 
-    - Description: The EndUser selects an income transaction to delete
-2. **TransactionInterface** -> **TransactionManager**: `confirmIncomeDeletion()`
-    - Description: The system asks the EndUser for deletion confirmation for the income transaction.
-3. **EndUser** -> **TransactionManager**: `confirm()`
-    - Description: The EndUser confirms the income transaction deletion.
-4. **TransactionManager** -> **Income**: `deleteIncome(transactionID)`
-    - Description: The `deleteIncome` method of the Income subclass is invoked.
-5. **Income** -> **Database**: `removeIncome()`
-    - Description: The specified income transaction is removed from the database.
-6. **Database** -> **TransactionManager**: `deleteConfirmation()`  
-    - Description: The database sends a confirmation of the successful deletion.
+** Edit Expense **
+ |--- Edit existing expense -------->|                   |
+ |<-- Display expense list ---------|                   |
+ |--- Select & update expense details |--------------->|
+ |                |--- editTransaction() (from Expense) |->  |
+ |                |                    |--- Update expense ----->|
+ |                |                    |<-- Update confirmation |
+ |<-- Expense updated confirmation ---------------------------|
 
-**Deleting an Expense Transaction** 
-1. **EndUser** -> **TransactionInterface**: `clickDeleteExpenseOption(transactionID)` 
-    - Description: The EndUser selects an expense transaction to delete.
-2. **TransactionInterface** -> **TransactionManager**: `confirmExpenseDeletion()`
-    - Description: The system asks the EndUser for deletion confirmation for the expense transaction.
-3. **EndUser** -> **TransactionManager**: `confirm()`
-    - Description: The EndUser confirms the expense transaction deletion.
-4. **TransactionManager** -> **Expense**: `deleteExpense(transactionID)`
-    - Description: The `deleteExpense` method of the Expense subclass is invoked.
-5. **Expense** -> **Database**: `removeExpense()`
-    - Description: The specified expense transaction is removed from the database.
-6. **Database** -> **TransactionManager**: `deleteConfirmation()`
-    - Description: The database sends a confirmation of the successful deletion.
+** Delete Income **
+ |--- Delete an income ------------->|                   |
+ |<-- Display income list ----------|                   |
+ |--- Select income to delete ------|----------------->|
+ |                |--- deleteTransaction() (from Income) |->  |
+ |                |                    |--- Remove income ------->|
+ |                |                    |<-- Deletion confirmation|
+ |<-- Income deleted confirmation ----------------------------|
+
+** Delete Expense **
+ |--- Delete an expense ------------>|                   |
+ |<-- Display expense list ---------|                   |
+ |--- Select expense to delete -----|----------------->|
+ |                |--- deleteTransaction() (from Expense) |-> |
+ |                |                    |--- Remove expense ----->|
+ |                |                    |<-- Deletion confirmation|
+ |<-- Expense deleted confirmation ---------------------------|
+
+
 
 
 **Sequence Diagram: Category Operations (Add, Edit, Delete)**
