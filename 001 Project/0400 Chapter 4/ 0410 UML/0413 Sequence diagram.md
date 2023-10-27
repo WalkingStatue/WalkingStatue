@@ -170,13 +170,14 @@ User             System          Budget         Database
  |                 |                |--- Update budget ------->|
  |                 |                |<-- Update confirmation --|
  |<-- Budget adjusted confirmation -------------------------|
+
 **Sequence Diagram: Financial Goal Operations**
 User               System        FinancialGoal      Database
  |                   |                |               |
  |--- Access system --------------->|               |
  |<-- Display main menu -----------|               |
 
-** Create Goal **
+**Create Goal**
  |--- Set new goal --------------->|               |
  |<-- Display goal form -----------|               |
  |--- Enter goal details ----------|------------->|
@@ -185,7 +186,7 @@ User               System        FinancialGoal      Database
  |                 |                |<-- Confirmation ------|
  |<-- Goal set confirmation -----------------------------|
 
-**Update Goal **
+**Update Goal**
  |--- Modify a goal -------------->|               |
  |<-- Display existing goals ------|               |
  |--- Select & adjust goal details -|------------->|
@@ -214,4 +215,37 @@ User               System        FinancialGoal      Database
 
 
 **Sequence Diagram: Financial Analysis Operations**
+User             System       FinancialAnalysis     Database
+ |                 |                |               |
+ |--- Access system -------------->|               |
+ |<-- Display main menu -----------|               |
+
+**Generate Monthly Summary**
+ |--- Request monthly summary ---->|               |
+ |<-- Choose month to analyze -----|               |
+ |--- Confirm month -------------->|------------->|
+ |                 |--- generateMonthlySummary() -|->|
+ |                 |                |--- Fetch totalIncome & totalExpenses -->|
+ |                 |                |<-- Income & expenses data --------------|
+ |                 |                |--- Calculate netSavings & budgetVariance -->|
+ |<-- Display monthly financial summary ---------------|
+
+**Calculate Net Savings**
+ |--- Request net savings -------->|               |
+ |<-- Choose month to compute -----|               |
+ |--- Confirm month -------------->|------------->|
+ |                 |--- calculateNetSavings() ---|->|
+ |                 |                |--- Fetch totalIncome & totalExpenses -->|
+ |                 |                |<-- Income & expenses data --------------|
+ |<-- Display net savings for the month -------------|
+
+**Calculate Budget Variance**
+ |--- Request budget variance ---->|               |
+ |<-- Choose month to compute -----|               |
+ |--- Confirm month -------------->|------------->|
+ |                 |--- calculateBudgetVariance() |->|
+ |                 |                |--- Fetch set budget & totalExpenses -->|
+ |                 |                |<-- Budget & expenses data --------------|
+ |<-- Display budget variance for the month -------|
+
 
