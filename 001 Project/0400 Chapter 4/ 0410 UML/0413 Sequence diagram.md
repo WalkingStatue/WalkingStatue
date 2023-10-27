@@ -148,6 +148,70 @@ User             System          Category       Database
 
 
 **Sequence Diagram: Budget Operations**
+User             System          Budget         Database
+ |                 |                |               |
+ |--- Access system -------------->|               |
+ |<-- Display main menu -----------|               |
+
+**Set Budget**
+ |--- Set new budget ------------->|               |
+ |<-- Display budget form ---------|               |
+ |--- Enter budget details & category |----------->|
+ |                 |--- setBudget() ---|->       |
+ |                 |                |--- Store budget ------->|
+ |                 |                |<-- Confirmation --------|
+ |<-- Budget set confirmation ------------------------------|
+
+**Adjust Budget**
+ |--- Modify a budget ----------->|               |
+ |<-- Display existing budgets ---|               |
+ |--- Select & adjust details ----|------------->|
+ |                 |--- adjustBudget() ---|->    |
+ |                 |                |--- Update budget ------->|
+ |                 |                |<-- Update confirmation --|
+ |<-- Budget adjusted confirmation -------------------------|
 **Sequence Diagram: Financial Goal Operations**
+User               System        FinancialGoal      Database
+ |                   |                |               |
+ |--- Access system --------------->|               |
+ |<-- Display main menu -----------|               |
+
+** Create Goal **
+ |--- Set new goal --------------->|               |
+ |<-- Display goal form -----------|               |
+ |--- Enter goal details ----------|------------->|
+ |                 |--- createGoal() ---|->       |
+ |                 |                |--- Store goal ------->|
+ |                 |                |<-- Confirmation ------|
+ |<-- Goal set confirmation -----------------------------|
+
+**Update Goal **
+ |--- Modify a goal -------------->|               |
+ |<-- Display existing goals ------|               |
+ |--- Select & adjust goal details -|------------->|
+ |                 |--- updateGoal() ---|->       |
+ |                 |                |--- Update goal ------->|
+ |                 |                |<-- Update confirmation |
+ |<-- Goal updated confirmation --------------------------|
+
+**Delete Goal**
+ |--- Delete a goal -------------->|               |
+ |<-- Display existing goals ------|               |
+ |--- Select goal to delete -------|------------->|
+ |                 |--- deleteGoal() ---|->       |
+ |                 |                |--- Remove goal ------->|
+ |                 |                |<-- Deletion confirmation|
+ |<-- Goal deleted confirmation ---------------------------|
+
+**Track Goal Progress**
+ |--- Track a goal's progress ---->|               |
+ |<-- Display existing goals ------|               |
+ |--- Select goal to track --------|------------->|
+ |                 |--- trackProgress() ---|->    |
+ |                 |                |--- Fetch currentAmount ->|
+ |                 |                |<-- Current amount data --|
+ |<-- Display goal progress -------------------------------|
+
+
 **Sequence Diagram: Financial Analysis Operations**
 
