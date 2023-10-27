@@ -4,28 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "e4198065b2ad4b59",
+        "id": "08e371e30b37bf3c",
         "type": "tabs",
         "children": [
           {
-            "id": "11db0ac50d8d010f",
+            "id": "e0956a9c759e7180",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000 College/Architecture Context Diagram.md",
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "2d5c04cfba227266",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "000 College/ebook-pressman-sw-engineering.pdf"
               }
             }
           }
@@ -96,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "000 College/Architecture Context Diagram.md",
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "000 College/Architecture Context Diagram.md",
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000 College/Architecture Context Diagram.md"
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md"
               }
             }
           },
@@ -174,10 +164,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "11db0ac50d8d010f",
+  "active": "e0956a9c759e7180",
   "lastOpenFiles": [
-    "000 College/ebook-pressman-sw-engineering.pdf",
+    "001 Project/0400 Chapter 4/ 0410 UML/ 0411 Use case diagram.md",
     "000 College/Architecture Context Diagram.md",
+    "000 College/ebook-pressman-sw-engineering.pdf",
     "001 Project/0100 Chapter 1/0120 system_details/0122 proposed_system.md",
     "001 Project/0100 Chapter 1/0120 system_details/0121 existing_system.md",
     "001 Project/0000 Index.md",
@@ -185,7 +176,6 @@
     "001 Project/0400 Chapter 4/ 0420 system_flow_diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/0415 State diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
-    "001 Project/0400 Chapter 4/ 0410 UML/ 0411 Use case diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML.md",
     "001 Project/0400 Chapter 4/ 0410 UML/ 0414 Activity diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",

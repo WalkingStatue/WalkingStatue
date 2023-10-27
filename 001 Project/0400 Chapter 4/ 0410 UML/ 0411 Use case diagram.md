@@ -1,10 +1,12 @@
-**Use Case Diagram for Personal Finance Management App:**
+
+---
+
+**Use Case Diagram for Personal Finance Management App (3rd Year Final Project):**
 
 **Actors:**
 
 1. **User**: The primary actor who will interact with the system.
 2. **System/Admin**: Represents the system or administrators who might manage the backend or resolve user issues.
-3. **Banking API** (optional): If the app integrates with banks for real-time transaction data or account balances.
 
 **Use Cases:**
 
@@ -16,19 +18,13 @@
 6. **Delete Transaction**: User removes a transaction.
 7. **View Transactions**: User views a list or detailed view of transactions.
 8. **Set Monthly Budget**: User defines a budget for a particular month or category.
-9. **View Financial Reports**: User sees graphical reports, summaries, or insights based on their financial data.
-10. **Set Alerts/Notifications**: User sets alerts for specific events, like when nearing budget limits.
-11. **Integrate Bank Account**: If the app has this feature, the user can connect their bank account to fetch transaction details automatically.
-12. **Update Profile**: User updates personal information or settings.
-13. **Reset Password**: User changes or resets the forgotten password.
-14. **View Suggestions**: System provides financial insights, tips, or suggestions based on user's spending patterns.
-15. **Backup Data**: The system provides an option to backup user data or export transaction details.
-16. **Admin Dashboard**: The system or admin monitors user activity, system health, or any other relevant metrics.
+9. **View Financial Reports**: User sees simple graphical reports or summaries based on their financial data. (Detailed insights might be excluded to simplify the project)
+10. **Set Alerts/Notifications**: User sets simple alerts, like when nearing budget limits. (To avoid complexity, real-time notifications might be excluded)
+11. **Update Profile**: User updates personal information or settings.
+12. **Reset Password**: User changes or resets their password.
+13. **Backup Data**: The system provides an option to manually backup user data, perhaps to a simple file format like CSV.
 
 **Relationships:**
 
 - **User** interacts with all use cases related to transaction management, budgeting, account settings, and viewing reports.
-
-- **System/Admin** mainly interacts with backend functionalities like admin dashboard or backup data.
- 
-- If there's a **Banking API**, it would mainly be involved with "Integrate Bank Account" use case
+- **System/Admin** mainly interacts with backend functionalities like monitoring user activity or backup data.
