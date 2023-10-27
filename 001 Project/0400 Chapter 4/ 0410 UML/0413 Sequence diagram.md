@@ -1,51 +1,37 @@
 **Sequence Diagram: User Registration and Authentication**
 
-1. **User** -> **System**: Access website
-2. **System** -> **User**: Display homepage
+User           System         UserClass       Database
+ |               |               |               |
+ |--- Access website ---------->|               |
+ |<-- Display homepage ---------|               |
+ |--- Click 'Register' -------->|               |
+ |<-- Display registration -----|               |
+ |--- Fill out details & submit-|-------------->|
+ |               |--- register()-|->            |
+ |               |               |--- Save details ------->|
+ |               |               |<-- Confirmation -------|
+ |<-- Registration success or error ---------------------|
+ |--- Click 'Login' ----------->|               |
+ |<-- Display login form ------|               |
+ |--- Inputs username & password|-------------->|
+ |               |--- login()---|->            |
+ |               |               |--- Verify credentials -->|
+ |               |               |<-- Verification --------|
+ |<-- Login success or error -----------------------------|
+ |--- Navigate to 'Profile' --->|               |
+ |<-- Display profile details -|               |
+ |--- Modifies details & submit-|-------------->|
+ |               |--- updateProfile()---|->    |
+ |               |               |--- Update details ------->|
+ |               |               |<-- Update confirmation --|
+ |<-- Update success or error -----------------------------|
+ |--- Click 'Logout' ---------->|               |
+ |               |--- logout() -|->            |
+ |<-- Session terminated -------|               |
+ |<-- Display homepage ---------|               |
 
-**Registration Process**
-3. User -> System: Clicks on 'Register' button
-4. System -> User: Display registration form
-5. User -> System: Fills out details (username, password, email) & submits
-6. System -> UserClass: register()
-    a. System checks if username or email already exists
-    b. System encrypts password
-    c. System assigns a unique userID
-    d. System stores dateJoined
-7. UserClass -> Database: Save new user details
-8. Database -> UserClass: Confirmation
-9. UserClass -> System: Registration successful or error message
-10. System -> User: Display confirmation or error
 
-**Login Process**
-11. User -> System: Clicks on 'Login' button
-12. System -> User: Display login form
-13. User -> System: Inputs username & password & submits
-14. System -> UserClass: login()
-    a. System fetches user details based on username
-    b. System compares encrypted password
-15. UserClass -> Database: Verify user credentials
-16. Database -> UserClass: Verification result
-17. UserClass -> System: Login successful or error message
-18. System -> User: Display user dashboard or error
 
-**Update Profile**
-19. User -> System: Navigate to 'Profile' settings
-20. System -> User: Display profile details
-21. User -> System: Modifies details & submits changes
-22. System -> UserClass: updateProfile()
-    a. System checks for validation
-    b. System encrypts new password (if changed)
-23. UserClass -> Database: Update user details
-24. Database -> UserClass: Update confirmation
-25. UserClass -> System: Update successful or error message
-26. System -> User: Display confirmation or error
-
-** Logout Process **
-27. User -> System: Clicks on 'Logout' button
-28. System -> UserClass: logout()
-29. UserClass -> System: Session terminated
-30. System -> User: Display homepage or logout confirmation
 
 
 
