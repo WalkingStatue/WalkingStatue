@@ -1,64 +1,52 @@
-**Sequence Diagram: User Operations (Register, Login, Logout, Update Profile)**
+**Sequence Diagram: User Registration and Authentication**
 
-**Actors and Objects**:
+1. **User** -> **System**: Access website
+2. **System** -> **User**: Display homepage
 
-1. EndUser (The person using the system)
-2. UserInterface (UI)
-3. UserSystem (This manages the interactions involving the User class)
-4. User
-5. Database
+**Registration Process**
+3. User -> System: Clicks on 'Register' button
+4. System -> User: Display registration form
+5. User -> System: Fills out details (username, password, email) & submits
+6. System -> UserClass: register()
+    a. System checks if username or email already exists
+    b. System encrypts password
+    c. System assigns a unique userID
+    d. System stores dateJoined
+7. UserClass -> Database: Save new user details
+8. Database -> UserClass: Confirmation
+9. UserClass -> System: Registration successful or error message
+10. System -> User: Display confirmation or error
 
-**Flow**:
+**Login Process**
+11. User -> System: Clicks on 'Login' button
+12. System -> User: Display login form
+13. User -> System: Inputs username & password & submits
+14. System -> UserClass: login()
+    a. System fetches user details based on username
+    b. System compares encrypted password
+15. UserClass -> Database: Verify user credentials
+16. Database -> UserClass: Verification result
+17. UserClass -> System: Login successful or error message
+18. System -> User: Display user dashboard or error
 
-**User Registration**
+**Update Profile**
+19. User -> System: Navigate to 'Profile' settings
+20. System -> User: Display profile details
+21. User -> System: Modifies details & submits changes
+22. System -> UserClass: updateProfile()
+    a. System checks for validation
+    b. System encrypts new password (if changed)
+23. UserClass -> Database: Update user details
+24. Database -> UserClass: Update confirmation
+25. UserClass -> System: Update successful or error message
+26. System -> User: Display confirmation or error
 
-1. **EndUser** -> **UserInterface (UI)**: `clickRegisterOption()` 
-    - Description: The EndUser chooses to register through the interface.
-2. **UserInterface (UI)** -> **UserSystem**: `initiateRegistration()`
-    - Description: The system presents a registration form.
-3. **EndUser** -> **UserSystem**: `inputRegistrationDetails(username, email, password)`
-    - Description: The EndUser fills in registration details.
-4. **UserSystem** -> **User**: `register(username, email, password)`
-    - Description: The `register` method of the User class is invoked.
-5. **User** -> **Database**: `storeUserDetails()`
-    - Description: User details are stored in the database.
-6. **Database** -> **UserSystem**: `confirmation()`
-    - Description: The database sends a confirmation of the successful registration.
+** Logout Process **
+27. User -> System: Clicks on 'Logout' button
+28. System -> UserClass: logout()
+29. UserClass -> System: Session terminated
+30. System -> User: Display homepage or logout confirmation
 
-**User Login**
-1. **EndUser** -> **UserInterface (UI)**: `clickLoginOption()` - Description: The EndUser chooses to log in.
-2. **UserInterface (UI)** -> **UserSystem**: `initiateLogin()`
-    - Description: The system presents a login form.
-3. **EndUser** -> **UserSystem**: `inputLoginDetails(username, password)`
-    - Description: The EndUser fills in login details.
-4. **UserSystem** -> **User**: `login(username, password)`
-    - Description: The `login` method of the User class is invoked.
-5. **User** -> **Database**: `checkCredentials()`
-    - Description: The system checks the provided credentials in the database.
-6. **Database** -> **UserSystem**: `loginResult(success/failure)`
-    - Description: The database sends the result of the login attempt.
-
-**User Logout**
-1. **EndUser** -> **UserInterface (UI)**: `clickLogoutOption()`-
-    - Description: The EndUser chooses to log out.
-2. **UserInterface (UI)** -> **UserSystem**: `initiateLogout()`
-    - Description: Initiates the logout process.
-3. **UserSystem** -> **User**: `logout()`
-    - Description: The `logout` method of the User class is invoked.
-
-**User Profile Update** 
-1. **EndUser** -> **UserInterface (UI)**: `clickUpdateProfileOption()` 
-    - Description: The EndUser chooses to update their profile.
-2. **UserInterface (UI)** -> **UserSystem**: `initiateProfileUpdate()`
-    - Description: The system presents the user with their current profile details.
-3. **EndUser** -> **UserSystem**: `inputUpdatedDetails(newDetails)`
-    - Description: The EndUser modifies their profile details.
-4. **UserSystem** -> **User**: `updateProfile(newDetails)`
-    - Description: The `updateProfile` method of the User class is invoked.
-5. **User** -> **Database**: `storeUpdatedDetails()`
-    - Description: The updated user details are stored in the database.
-6. **Database** -> **UserSystem**: `updateConfirmation()`
-    - Description: The database sends a confirmation of the successful update.
 
 
 **Sequence Diagram: Transaction Operations (Add, Edit, Delete) with Subclasses**
