@@ -1,1 +1,2 @@
 [[0000 Index]]
+The personal finance app empowers users with robust features such as budget tracking, expense categorization, income management, saving goals, and financial insights. User actively engage by manually entering their financial data, prioritizing data security and ensuring a seamless and professional user experience to enhance their financial well-being

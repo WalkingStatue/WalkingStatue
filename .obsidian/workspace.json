@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/0415 State diagram.md",
+                "file": "001 Project/0200 Chapter 2/0240 project_defination.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/0415 State diagram.md",
+                "file": "001 Project/0200 Chapter 2/0240 project_defination.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/0415 State diagram.md",
+                "file": "001 Project/0200 Chapter 2/0240 project_defination.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/0415 State diagram.md"
+                "file": "001 Project/0200 Chapter 2/0240 project_defination.md"
               }
             }
           },
@@ -166,6 +166,10 @@
   },
   "active": "e0956a9c759e7180",
   "lastOpenFiles": [
+    "001 Project/0200 Chapter 2/0230 consolidated_list_of_requirements.md",
+    "001 Project/0200 Chapter 2/0220 requirement_gathering_technique_used.md",
+    "001 Project/0200 Chapter 2/0210 stakeholder_of_system.md",
+    "001 Project/0400 Chapter 4/ 0410 UML/0415 State diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/ 0414 Activity diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",
@@ -177,7 +181,6 @@
     "001 Project/0000 Index.md",
     "000 College/Java - The Complete Reference - 11 Edition.pdf",
     "001 Project/0400 Chapter 4/ 0420 system_flow_diagram.md",
-    "001 Project/0400 Chapter 4/ 0410 UML/0415 State diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML.md",
     "001 Project/0100 Chapter 1/0120 system_details.md",
     "001 Project/0300 Chapter 3/0330 system_planning.md",
@@ -191,8 +194,6 @@
     "001 Project/0300 Chapter 3/0320 hardware_software_requriments.md",
     "001 Project/0300 Chapter 3/0310 feasibility_study/0311 operational_study.md",
     "001 Project/0300 Chapter 3/0310 feasibility_study/0312 economical_study.md",
-    "001 Project/0300 Chapter 3/0310 feasibility_study/0311 technical_study.md",
-    "001 Project/0200 Chapter 2/0240 project_defination.md",
     "001 Project/0300 Chapter 3/0330 system_planning",
     "001 Project/0300 Chapter 3/0310 feasibility_study",
     "001 Project/0300 Chapter 3",
