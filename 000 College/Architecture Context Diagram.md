@@ -1,43 +1,40 @@
-**Context Diagram: Personal Finance Management System**
+**Architecture Context Diagram: Personal Finance Management System**
 
-**System**:
-
-- **Personal Finance Management System (PFMS)**: The core system that we've discussed in detail. This will be represented as a central circle or rectangle in the diagram.
-
-**External Entities**:
-
-1. **End User**: The person who logs into the system to manage finances, view transactions, set goals, etc.
-2. **Financial Institutions**: These represent banks or other financial entities from which the system might pull transaction data or to which it might push payment data.
-3. **Cloud Storage**: For backup or export purposes, the system might interact with a cloud storage service.
-4. **Email System**: To send notifications, alerts, or reports to the user.
-5. **Database**: This represents the backend storage where user profiles, transactions, and other relevant data are stored.
-
-**Interactions**:
-
-1. **End User**:
+- **Target System**:
     
-    - Sends: Login credentials, Transaction data, Budget settings, Financial goals.
-    - Receives: Financial analysis, Transaction histories, Notifications, Goal status updates.
-2. **Financial Institutions**:
+    - **Personal Finance Management System (PFMS)**
+- **Actors**:
     
-    - Sends: Transaction data, Bank account details.
-    - Receives: Payment directives or other actionable requests from the user via the PFMS.
-3. **Cloud Storage**:
+    1. **End Users**: Individuals who use the PFMS for managing their finances.
+    2. **Admin**: System administrators who manage and maintain the PFMS.
+- **Superordinate Systems**:
     
-    - Receives: Data backups, Exported reports or data.
-    - Sends: Previously stored backups or data on user request.
-4. **Email System**:
+    1. **Banking Systems**: Systems from which PFMS might fetch transaction details or to which it sends transaction instructions (e.g., for transfers or payments).
+    2. **Payment Gateways**: Systems that handle online payment processes for the PFMS.
+    3. **Financial News Services**: Services that provide current financial news and updates.
+- **Peers**:
     
-    - Receives: Email content and recipient details from the PFMS.
-    - Sends: Delivery confirmations or error messages.
-5. **Database**:
+    1. **Budgeting Apps**: Other applications that the user might use in parallel with PFMS for budgeting.
+    2. **Investment Apps**: Applications where users might be managing their investments, stocks, or mutual funds.
+- **Subordinate Systems**:
     
-    - Sends: Stored data upon system or user request.
-    - Receives: New or updated data from the PFMS for storage.
+    1. **Notification Service**: A system that manages and sends out notifications to users about their financial updates or alerts.
+    2. **Data Backup Service**: System responsible for backing up user data.
+    3. **Analytics Engine**: A system that processes and analyzes financial data to provide insights.
+
+**Relationships**:
+
+- **End Users** "use" the **PFMS** for daily financial management tasks.
+- **Admin** "uses" the **PFMS** for maintenance, user support, and other administrative tasks.
+- **PFMS** "uses" the **Banking Systems** to fetch or send financial data.
+- **PFMS** "uses" the **Payment Gateways** to process online payments.
+- **PFMS** "depends on" the **Notification Service** for sending alerts.
+- **PFMS** "depends on" the **Data Backup Service** for storing backups of financial data.
+- **PFMS** "depends on" the **Analytics Engine** for providing financial insights.
+- **Budgeting Apps** and **Investment Apps** are "peers" of PFMS, meaning they operate in similar domains but are not necessarily dependent on the PFMS.
 
 **Visualization**:
 
-- In the center of the diagram, place a circle or rectangle labeled "Personal Finance Management System" or "PFMS".
-- Around this central system, position the external entities: End User, Financial Institutions, Cloud Storage, Email System, and Database.
-- Draw lines connecting the PFMS to each of these external entities. These lines represent interactions or data flows.
-- Label each line with the type of data or request that is being sent or received.
+- The central box represents the **PFMS**.
+- Surrounding boxes represent the actors, superordinate systems, peers, and subordinate systems.
+- Arrows indicate the relationship between the PFMS and the other entities.
