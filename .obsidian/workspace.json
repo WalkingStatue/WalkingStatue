@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001 Project/0200 Chapter 2/0240 project_defination.md",
+                "file": "001 Project/0200 Chapter 2/0210 stakeholder_of_system.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001 Project/0200 Chapter 2/0240 project_defination.md",
+                "file": "001 Project/0200 Chapter 2/0210 stakeholder_of_system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "001 Project/0200 Chapter 2/0240 project_defination.md",
+                "file": "001 Project/0200 Chapter 2/0210 stakeholder_of_system.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "001 Project/0200 Chapter 2/0240 project_defination.md"
+                "file": "001 Project/0200 Chapter 2/0210 stakeholder_of_system.md"
               }
             }
           },
@@ -166,6 +166,18 @@
   },
   "active": "e0956a9c759e7180",
   "lastOpenFiles": [
+    "001 Project/0300 Chapter 3/0330 system_planning/0331 work_breakdown_structure.md",
+    "001 Project/0300 Chapter 3/0330 system_planning/Pasted image 20231027145502.png",
+    "001 Project/0300 Chapter 3/0340 process_model.md",
+    "001 Project/0300 Chapter 3/Pasted image 20231027145443.png",
+    "001 Project/0300 Chapter 3/0330 system_planning.md",
+    "001 Project/0300 Chapter 3/0330 system_planning/Pasted image 20231027145338.png",
+    "001 Project/0300 Chapter 3/0330 system_planning/0332 gantt_chart.md",
+    "001 Project/0300 Chapter 3/0320 hardware_software_requriments.md",
+    "001 Project/0300 Chapter 3/0310 feasibility_study/0312 economical_study.md",
+    "001 Project/0300 Chapter 3/0310 feasibility_study/0311 technical_study.md",
+    "001 Project/0300 Chapter 3/0310 feasibility_study/0311 operational_study.md",
+    "001 Project/0200 Chapter 2/0240 project_defination.md",
     "001 Project/0200 Chapter 2/0230 consolidated_list_of_requirements.md",
     "001 Project/0200 Chapter 2/0220 requirement_gathering_technique_used.md",
     "001 Project/0200 Chapter 2/0210 stakeholder_of_system.md",
@@ -183,17 +195,7 @@
     "001 Project/0400 Chapter 4/ 0420 system_flow_diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML.md",
     "001 Project/0100 Chapter 1/0120 system_details.md",
-    "001 Project/0300 Chapter 3/0330 system_planning.md",
     "001 Project/0300 Chapter 3/0310 feasibility_study.md",
-    "001 Project/0400 Chapter 4/ 0450 system_navigation.md",
-    "001 Project/0400 Chapter 4/ 0440 user_interface.md",
-    "001 Project/0400 Chapter 4/ 0430 data_dictionary.md",
-    "001 Project/0300 Chapter 3/0340 process_model.md",
-    "001 Project/0300 Chapter 3/0330 system_planning/0332 gantt_chart.md",
-    "001 Project/0300 Chapter 3/0330 system_planning/0331 work_breakdown_structure.md",
-    "001 Project/0300 Chapter 3/0320 hardware_software_requriments.md",
-    "001 Project/0300 Chapter 3/0310 feasibility_study/0311 operational_study.md",
-    "001 Project/0300 Chapter 3/0310 feasibility_study/0312 economical_study.md",
     "001 Project/0300 Chapter 3/0330 system_planning",
     "001 Project/0300 Chapter 3/0310 feasibility_study",
     "001 Project/0300 Chapter 3",
