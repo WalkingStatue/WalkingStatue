@@ -225,3 +225,78 @@ Cybercrimes encompass a broad range of activities, which can be facilitated thro
 **Note**: The above punishments and fines are based on the IT Act 2008 and its amendments as of 2022. The Act might undergo further amendments, and it's always essential to refer to the latest version for the most accurate details.
 
 **Q6**
+**Case Study: Domain Name Dispute – Nissan Motors vs. Nissan Computer Corporation**
+
+**Background**: One of the most notable domain name disputes involved Nissan Motors, the globally recognized automobile manufacturer, and Nissan Computer Corporation, a small computer company owned by Uzi Nissan. The bone of contention was the domain name "Nissan.com."
+
+**Timeline and Key Points**:
+
+1. **Early Beginnings**:
+    
+    - Uzi Nissan, an entrepreneur, started Nissan Computer Corporation in 1991. The company was involved in selling computer systems, computer consulting, and later internet services.
+    - In 1994, Uzi Nissan registered the domain name "Nissan.com" for his business.
+2. **Conflict Arises**:
+    
+    - As the internet grew in popularity in the late 1990s, major companies rushed to secure domain names that matched their corporate names or brands. Nissan Motors, realizing the importance of having "Nissan.com," approached Uzi Nissan with offers to buy the domain. Uzi Nissan refused, as it was his last name and the legitimate name of his business.
+    - In 1999, Nissan Motors filed a lawsuit against Nissan Computer Corporation, alleging trademark infringement, trademark dilution, and cyber-squatting.
+3. **Legal Battles**:
+    
+    - Over the years, a series of court battles ensued. Initially, the court ruled in favor of Nissan Motors, placing an injunction on Uzi Nissan, restricting the use of the domain for business purposes.
+    - However, the court also held that Uzi Nissan had the right to use his name for a legitimate business and had not registered the domain in bad faith.
+    - The cases went back and forth in appeals. In later rulings, many of the earlier restrictions on the use of the domain by Nissan Computer Corporation were lifted, but Uzi Nissan was still barred from using the domain to disparage Nissan Motors or to post links to automobile-related content.
+4. **Outcome and Settlement**:
+    
+    - The dispute stretched over nearly a decade. While Nissan Motors was able to secure some restrictions on the use of "Nissan.com," they couldn't obtain the domain name.
+    - In 2007, the parties reached a settlement, the details of which were not fully disclosed. However, as of the last update, Nissan Computer Corporation retains the rights to "Nissan.com."
+
+**Analysis**:
+
+This case stands as a quintessential example of the complications surrounding domain name disputes, especially when trademarks and personal names collide. It showcases the importance of early domain registration and the legal complexities when global giants clash with small businesses over digital real estate.
+
+Furthermore, this dispute underscores the significance of the "first come, first serve" principle in domain registrations. Just because a party holds a trademark doesn't automatically entitle them to the corresponding domain name if it's already legitimately owned by another party.
+
+**Conclusion**:
+
+The Nissan domain dispute offers a cautionary tale for businesses, emphasizing the need to be proactive in securing domain names and understanding the nuances of trademark laws in the digital age. It also highlights the resilience of small entities when defending their legitimate rights against much larger adversaries.
+
+**Q7**
+**Duration of Protection and Remedies for Intellectual Property Infringement**
+
+**A. Patent**:
+
+- **Duration of Protection**: Typically, a patent lasts for 20 years from the date of filing the application. However, it must be maintained through the payment of annual fees.
+- **Remedies in Case of Infringement**:
+    1. **Injunction**: The patent holder can ask the court to issue an order preventing the infringer from making, using, or selling the patented invention.
+    2. **Damages**: The patent holder can sue for monetary compensation. The amount is typically based on the actual harm suffered or profits the infringer made.
+    3. **Seizure**: Courts can order the seizure of infringing products.
+    4. **Criminal Action**: In some jurisdictions, patent infringement can also lead to criminal penalties.
+- **Real-life Example**: BlackBerry sued Ryan Seacrest's company Typo for producing a keyboard attachment for iPhones that closely resembled BlackBerry's keyboard design. BlackBerry won an injunction, and Typo was ordered to pay damages.
+
+**B. Trademark**:
+
+- **Duration of Protection**: A trademark registration is initially valid for 10 years. However, it can be renewed indefinitely every 10 years as long as it remains in use.
+- **Remedies in Case of Infringement**:
+    1. **Injunction**: Prevents the infringer from using the trademark.
+    2. **Damages**: Compensation for losses due to infringement.
+    3. **Account of Profits**: The infringer may be ordered to pay over the profits made as a result of the infringement.
+    4. **Delivery up or Destruction**: Courts can order infringing goods to be handed over or destroyed.
+- **Real-life Example**: Apple Inc. and Samsung had a long-standing trademark and patent dispute over smartphone designs. After various rulings, Samsung had to pay significant damages to Apple for copying parts of its iPhone design.
+
+**C. Copyright**:
+
+- **Duration of Protection**: Generally, copyright lasts for the life of the author plus 70 years. However, the duration might vary based on the type of work and its publication status.
+- **Remedies in Case of Infringement**:
+    1. **Injunction**: Stops the infringing activities.
+    2. **Damages**: Compensation for the copyright holder's losses.
+    3. **Statutory Damages**: A predetermined amount of money awarded per work infringed upon.
+    4. **Criminal Penalties**: In many jurisdictions, willful copyright infringement can result in criminal charges.
+- **Real-life Example**: In 2017, the band Led Zeppelin was taken to court over allegations that they had copied the opening chords for their song "Stairway to Heaven" from the song "Taurus" by Spirit. They won the case, proving there was no infringement.
+
+**D. Integrated Circuit Design (Layout-Design)**:
+
+- **Duration of Protection**: Protection typically lasts for 10 years from the date of filing or the first commercial exploitation, whichever is earlier.
+- **Remedies in Case of Infringement**:
+    1. **Injunction**: Halting the production or sale of the infringing integrated circuits.
+    2. **Damages**: Compensation for the financial harm suffered.
+    3. **Destruction**: Infringing products might be ordered to be destroyed.
+- **Real-life Example**: In the semiconductor industry, layout designs are crucial. Qualcomm has previously taken legal action against Meizu, a Chinese smartphone maker, alleging patent infringement related to the designs of semiconductors.
