@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",
+                "file": "001 Project/0400 Chapter 4/ 0430 data_dictionary.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",
+                "file": "001 Project/0400 Chapter 4/ 0430 data_dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",
+                "file": "001 Project/0400 Chapter 4/ 0430 data_dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md"
+                "file": "001 Project/0400 Chapter 4/ 0430 data_dictionary.md"
               }
             }
           },
@@ -166,6 +166,9 @@
   },
   "active": "2506a960dde015b3",
   "lastOpenFiles": [
+    "001 Project/0000 Index.md",
+    "001 Project/0400 Chapter 4/ 0430 data_dictionary.md",
+    "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/ 0411 Use case diagram.md",
     "001 Project/0400 Chapter 4/ 0420 system_flow_diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/0415 State diagram.md",
@@ -178,8 +181,6 @@
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Transaction.md",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/User Authenctiation.md",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code",
-    "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",
-    "001 Project/0400 Chapter 4/ 0430 data_dictionary.md",
     "001 Project/0100 Chapter 1/0140 objectives.md",
     "001 Project/0100 Chapter 1/0130 scope_of_system.md",
     "001 Project/0100 Chapter 1/0120 system_details/0122 proposed_system.md",
@@ -195,7 +196,6 @@
     "001 Project/0300 Chapter 3/0330 system_planning/Pasted image 20231027145338.png",
     "001 Project/0300 Chapter 3/0330 system_planning/0332 gantt_chart.md",
     "001 Project/0300 Chapter 3/0320 hardware_software_requriments.md",
-    "001 Project/0300 Chapter 3/0310 feasibility_study/0312 economical_study.md",
     "000 College/ebook-pressman-sw-engineering.pdf",
     "000 College/Java - The Complete Reference - 11 Edition.pdf",
     "001 Project/0300 Chapter 3/0330 system_planning",
