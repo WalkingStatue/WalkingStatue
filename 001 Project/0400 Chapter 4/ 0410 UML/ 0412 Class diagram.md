@@ -112,3 +112,106 @@ Class Diagram for Personal Finance Management App:
 - For the Association relationship between, say, Transaction and Category, it's often a simple line. However, you can specify cardinality if needed, like `1` for a Transaction (every transaction has exactly one category) and `0..*` for Category (a category can be associated with zero or more transactions).
 
 These relationships form the backbone of the system, allowing for interactions between various entities and providing structure to the data. When visualizing these relationships in a UML diagram, they'll help convey the system's structure and behavior clearly.
+
+
+
+**PlantText UML Code**
+@startuml
+
+skinparam class {
+    BackgroundColor #ffba00
+    ArrowColor Black
+    BorderColor Black
+}
+
+' User Class
+class User {
+    - userID: Int
+    - username: String
+    - password: String
+    - email: String
+    - dateJoined: Date
+    + register(): void
+    + login(): void
+    + logout(): void
+    + updateProfile(): void
+}
+
+' Transaction Class
+class Transaction {
+    - transactionID: Int
+    - amount: Float
+    - date: Date
+    - description: String
+    - category: Category
+    + addTransaction(): void
+    + editTransaction(): void
+    + deleteTransaction(): void
+}
+
+' Income and Expense Classes
+class Income {
+    - source: String
+}
+Income --|> Transaction
+
+class Expense {
+    - destination: String
+}
+Expense --|> Transaction
+
+' Category Class
+class Category {
+    - categoryID: Int
+    - name: String
+    - type: String
+    + createCategory(): void
+    + deleteCategory(): void
+}
+
+' Budget Class
+class Budget {
+    - budgetID: Int
+    - month: Date
+    - amount: Float
+    - category: Category
+    + setBudget(): void
+    + adjustBudget(): void
+}
+
+' FinancialGoal Class
+class FinancialGoal {
+    - goalID: Int
+    - name: String
+    - targetAmount: Float
+    - targetDate: Date
+    - currentAmount: Float
+    - description: String
+    + createGoal(): void
+    + updateGoal(): void
+    + deleteGoal(): void
+    + trackProgress(): void
+}
+
+' FinancialAnalysis Class
+class FinancialAnalysis {
+    - analysisID: Int
+    - userID: Int
+    - month: Date
+    - totalIncome: Float
+    - totalExpenses: Float
+    - netSavings: Float
+    - budgetVariance: Float
+    + generateMonthlySummary(): void
+    + calculateNetSavings(): Float
+    + calculateBudgetVariance(): Float
+}
+
+' Relationships
+User "1" -- "0..*" Transaction: creates
+Transaction "1" -- "0..*" Category: has
+Budget "1" -- "0..*" Category: is set for
+User "1" - "0..*" FinancialGoal: sets
+User "1" -- "0..*" FinancialAnalysis: receives
+
+@enduml
