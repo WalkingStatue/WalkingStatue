@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
-                "mode": "preview",
+                "file": "000 College/CLIP ASS-2.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Q1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,7 +66,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
+                "file": "000 College/CLIP ASS-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
+                "file": "000 College/CLIP ASS-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md"
+                "file": "000 College/CLIP ASS-2.md"
               }
             }
           },
@@ -164,8 +165,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d8f91048e6296c4b",
+  "active": "2506a960dde015b3",
   "lastOpenFiles": [
+    "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
+    "000 College/CLIP ASS-2.md",
+    "Untitled.md",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Category.md",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Category.png",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Transaction.md",
@@ -189,7 +193,6 @@
     "001 Project/0400 Chapter 4/ 0430 data_dictionary.md",
     "001 Project/0000 Index.md",
     "001 Project/0400 Chapter 4/ 0420 system_flow_diagram.md",
-    "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code",
     "001 Project/0100 Chapter 1/0140 objectives.md",
     "001 Project/0100 Chapter 1/0130 scope_of_system.md",
@@ -201,7 +204,6 @@
     "001 Project/0300 Chapter 3/0330 system_planning/0331 work_breakdown_structure.md",
     "001 Project/0300 Chapter 3/0330 system_planning/Pasted image 20231027145502.png",
     "001 Project/0300 Chapter 3/0340 process_model.md",
-    "001 Project/0300 Chapter 3/0330 system_planning.md",
     "000 College/ebook-pressman-sw-engineering.pdf",
     "000 College/Java - The Complete Reference - 11 Edition.pdf",
     "001 Project/0300 Chapter 3/0330 system_planning",
