@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "000 College/CLIP ASS-2.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -71,7 +71,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2224ced4b291cb00",
