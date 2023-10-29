@@ -1,6 +1,6 @@
 
 ---
-
+![[Use Case.png]]
 **Use Case Diagram for Personal Finance Management App (3rd Year Final Project):**
 
 **Actors:**

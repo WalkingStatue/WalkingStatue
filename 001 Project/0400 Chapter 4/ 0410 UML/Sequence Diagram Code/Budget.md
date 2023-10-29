@@ -1,3 +1,4 @@
+![[Budget.png]]
 @startuml
 skinparam sequence {
 

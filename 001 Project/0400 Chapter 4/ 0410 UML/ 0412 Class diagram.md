@@ -1,5 +1,5 @@
 Class Diagram for Personal Finance Management App:
-
+![[Class Diagram.png]]
 1. **Class: User**
     - Attributes:
         - `userID`: Int - A unique identifier for each user.

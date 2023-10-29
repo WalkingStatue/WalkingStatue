@@ -1,3 +1,4 @@
+![[FinancialAnalysis.png]]
 @startuml
 skinparam sequence {
 

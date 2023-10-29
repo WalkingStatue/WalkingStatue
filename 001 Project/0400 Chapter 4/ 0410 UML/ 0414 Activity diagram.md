@@ -1,5 +1,5 @@
 **Activity Diagram: Managing Personal Finances**
-
+![[Activity Diagram.png]]
 **Nodes**:
 
 1. **Start**: The point at which the activity begins.

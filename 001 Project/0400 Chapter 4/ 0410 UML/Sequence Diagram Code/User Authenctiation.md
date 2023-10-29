@@ -1,3 +1,4 @@
+![[User Registration and Authentication.png]]
 @startuml
 
 
