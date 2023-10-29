@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Category.md",
-                "mode": "source",
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Category.md",
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Category.md",
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Category.md"
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md"
               }
             }
           },
@@ -164,8 +164,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2506a960dde015b3",
+  "active": "d8f91048e6296c4b",
   "lastOpenFiles": [
+    "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Category.md",
+    "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Category.png",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Transaction.md",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Transaction.png",
     "Transaction.png.md",
@@ -175,7 +177,6 @@
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/FinancialGoal.png",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Financial Analysis.md",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/FinancialAnalysis.png",
-    "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Category.md",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Budget.md",
     "001 Project/0400 Chapter 4/ 0410 UML/0415 State diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/ 0414 Activity diagram.md",
@@ -200,7 +201,6 @@
     "001 Project/0300 Chapter 3/0330 system_planning/0331 work_breakdown_structure.md",
     "001 Project/0300 Chapter 3/0330 system_planning/Pasted image 20231027145502.png",
     "001 Project/0300 Chapter 3/0340 process_model.md",
-    "001 Project/0300 Chapter 3/Pasted image 20231027145443.png",
     "001 Project/0300 Chapter 3/0330 system_planning.md",
     "000 College/ebook-pressman-sw-engineering.pdf",
     "000 College/Java - The Complete Reference - 11 Edition.pdf",

@@ -1,3 +1,4 @@
+![[Category.png]]
 @startuml
 skinparam sequence {
 
