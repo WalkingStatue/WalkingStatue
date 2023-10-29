@@ -11,8 +11,12 @@
             "id": "2506a960dde015b3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0411 Use case diagram.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0411 Use case diagram.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0411 Use case diagram.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "001 Project/0400 Chapter 4/ 0410 UML/ 0411 Use case diagram.md"
+              }
             }
           },
           {
@@ -158,8 +166,11 @@
   },
   "active": "2506a960dde015b3",
   "lastOpenFiles": [
-    "001 Project/0400 Chapter 4/ 0410 UML/ 0414 Activity diagram.md",
+    "001 Project/0400 Chapter 4/ 0420 system_flow_diagram.md",
+    "001 Project/0400 Chapter 4/ 0430 data_dictionary.md",
     "001 Project/0400 Chapter 4/ 0410 UML/ 0412 Class diagram.md",
+    "001 Project/0400 Chapter 4/ 0410 UML/ 0411 Use case diagram.md",
+    "001 Project/0400 Chapter 4/ 0410 UML/ 0414 Activity diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/0415 State diagram.md",
     "001 Project/0400 Chapter 4/ 0410 UML/0413 Sequence diagram.md",
     "001 Project/0100 Chapter 1/0140 objectives.md",
@@ -183,12 +194,9 @@
     "001 Project/0200 Chapter 2/0240 project_defination.md",
     "001 Project/0200 Chapter 2/0230 consolidated_list_of_requirements.md",
     "001 Project/0200 Chapter 2/0220 requirement_gathering_technique_used.md",
-    "001 Project/0400 Chapter 4/ 0410 UML/ 0411 Use case diagram.md",
     "000 College/Architecture Context Diagram.md",
     "000 College/ebook-pressman-sw-engineering.pdf",
-    "001 Project/0000 Index.md",
     "000 College/Java - The Complete Reference - 11 Edition.pdf",
-    "001 Project/0400 Chapter 4/ 0420 system_flow_diagram.md",
     "001 Project/0300 Chapter 3/0330 system_planning",
     "001 Project/0300 Chapter 3/0310 feasibility_study",
     "001 Project/0300 Chapter 3",
