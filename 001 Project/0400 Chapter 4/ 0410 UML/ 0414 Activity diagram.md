@@ -55,3 +55,86 @@
 4. From the **Main Menu**, the user can navigate to various activities: **View Transactions**, **Set Financial Goals**, **Generate Financial Analysis**, or **Manage Budget**. The user can also **Logout**.
 5. Within each main activity (like **View Transactions**), there are further sub-activities or tasks. Once completed, the flow typically goes back to the **Main Menu**.
 6. The activity ends when the user selects **Logout** and reaches **End**.
+
+
+**PlantText UML Code**
+@startuml
+skinparam ActivityBackgroundColor #ffba00
+skinparam ActivityBorderColor Black
+skinparam ActivityFontColor Black
+
+start
+repeat :Login;
+backward: Login Failed;
+repeat while (Login Successful?) is (No)
+-> Yes;
+
+fork
+
+  split
+
+    :View Transaction;
+    split
+      :Add Transaction;
+      split
+        :Add Income;
+      split again
+        :Add Expense;
+      end split
+    split again
+      :Edit Transaction;
+      split
+        :Edit Income;
+      split again
+        :Edit Expense;
+      end split
+    split again
+      :Delete Transaction;
+      split
+        :Delete Income;
+      split again
+        :Delete Expense;
+      end split
+    end split
+
+  split again
+
+    :Set Financial Goals;
+    split
+      :Add New Financial Goal;
+    split again
+      :Edit Goal;
+    split again
+      :Delete Goal;
+    split again
+      :Mark Goal as Achieved;
+    end split
+
+  split again
+
+    :Generate Financial Analysis;
+    :View Overview;
+    :View Detailed Analysis;
+    split
+      :Export Analysis;
+    end split
+
+  split again
+
+    :Manage Budget;
+    split
+      :Set New Budget;
+    split again
+      :Edit Budget;
+    split again
+      :Delete Budget;
+    end split
+
+  end split
+
+end fork
+
+:Logout;
+stop
+
+@enduml
