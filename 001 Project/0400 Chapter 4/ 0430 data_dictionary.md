@@ -49,7 +49,7 @@
 | amount          | Float     | -    | Monetary limit set for the budget.                            | Not Null                                 |
 | category        | Category  | -    | Specific type or classification of the budget.                | Foreign Key (categoryID from Category)   |
 
-### FinancialGoal Class:
+	### FinancialGoal Class:
 
 | Field Name      | Type      | Size | Description                                                   | Constraints    |
 |-----------------|-----------|------|---------------------------------------------------------------|----------------|
