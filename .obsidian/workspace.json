@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2224ced4b291cb00",
@@ -164,7 +165,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d7aed2fb0d904a1",
+  "active": "d8f91048e6296c4b",
   "lastOpenFiles": [
     "001 Project/0400 Chapter 4/ 0410 UML.md",
     "001 Project/0000 Index.md",
