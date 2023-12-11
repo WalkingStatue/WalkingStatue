@@ -287,3 +287,58 @@ functionality
 
 ![[Pasted image 20231211144159.png]]
 
+
+
+**Chapter 5**
+
+*Requirements Engineering-I
+
+■ Inception—ask a set of questions that establish …
+■ basic understanding of the problem
+■ the people who want a solution
+■ the nature of the solution that is desired, and
+■ the effectiveness of preliminary communication and collaboration
+between the customer and the developer
+■ Elicitation—elicit (obtain) requirements from all stakeholders
+■ Elicitation is not simple it faces following problems
+• Problem of scope
+• Problem of understanding
+• Problem of volatility (requirement change )
+■ Elaboration—create an analysis model that identifies data, function
+and behavioral requirements
+■ Negotiation—agree on a deliverable system that is realistic for
+developers and customers
+■ Specification—can be any one (or more) of the following:
+■ A written document
+■ A set of models
+■ A formal mathematical models
+■ A collection of user scenarios (use-cases)
+■ A prototype
+■ Validation—a review mechanism that looks for
+■ errors in content or interpretation
+■ areas where clarification may be required
+■ missing information
+■ inconsistencies (a major problem when large products or systems
+are engineered)
+■ conflicting or unrealistic (unachievable) requirements.
+■ Requirements management : A set of activities that helps the project
+team – identify , control, and track requirements and changes to
+requirements at any time as project proceeds
+
+*Quality Function Deployment
+
+■ Function deployment
+■ Information deployment
+■ Task deployment
+■ Value analysis
+
+
+**Chapter 6**
+Requirements Modeling: Scenarios, Information,
+and Analysis Classes
+
+■ Requirements analysis
+specifies software’s operational characteristics
+indicates software's interface with other system elements
+establishes constraints that software must meet
+
