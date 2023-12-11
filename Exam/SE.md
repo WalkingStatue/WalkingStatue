@@ -210,4 +210,80 @@ Agile Development
 *An Agile Process
 
 -customer descriptions
+-plans are short-lived
+-Develops software iteratively
+-multiple ‘software increments’
+-Adjusts as changes occur
+
+*Agility Principles 
+1. Our highest priority is to satisfy the customer through early
+and continuous delivery of valuable software.
+2. Welcome changing requirements, even late in development.
+Agile processes binds change for the customer's reasonable
+advantage.
+3. Deliver working software frequently, from a couple of weeks to
+a couple of months, with the shorter timescale.
+4. Business people and developers must work together daily
+throughout the project.
+5. Build projects around motivated individuals. Give them the
+environment and support they need, and trust them to get the
+job done.
+6. The most efficient and effective method of conveying
+information to and within a development team is face–to–face
+conversation.
+Agility Principles - I
+7. Working software is the primary measure of progress.
+8. Agile processes promote sustainable development. The
+sponsors, developers, and users should be able to
+maintain a constant pace indefinitely. (work together )
+9. Continuous attention to technical excellence and good
+design enhances agility.
+10. Simplicity – the art of maximizing the amount of work
+not done – is essential.
+11. The best architectures, requirements, and designs
+emerge from self–organizing teams.
+12. At regular intervals, the team reflects on how to become
+more effective, then tunes and adjusts its behavior
+accordingly.
+
+*Human Factors
+
+■ the process molds to the needs of the people and
+team, not the other way around
+■ Competence. (capability)
+■ Common focus.
+■ Collaboration.
+■ Decision-making ability.
+■ Fuzzy (uncertain) problem-solving ability.
+■ Mutual trust and respect.
+■ Self-organization
+
+*Extreme Programming (XP)
+
+■ XP Planning
+■ Begins with the creation of “user stories”
+■ Agile team assesses each story and assigns a cost
+■ Stories are grouped to for a deliverable increment
+■ A commitment is made on delivery date
+■ After the first increment “project velocity” is used to
+help define subsequent delivery dates for other
+increments
+■ XP Design
+■ Follows the Keep It Simple principle
+■ Encourage the use of CRC cards (class responsibility collabrator)
+■ For difficult design problems, suggests the creation of “spike
+solutions”—a design prototype
+■ Encourages “refactoring”—an iterative refinement of the internal
+program design
+■ XP Coding
+■ Recommends the construction of a unit test for a store before
+coding commences
+■ Encourages “pair programming”
+■ XP Testing
+■ All unit tests are executed daily
+■ “Acceptance tests” are defined by the customer and excuted to
+assess customer visible 
+functionality
+
+![[Pasted image 20231211144159.png]]
 
