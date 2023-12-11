@@ -342,3 +342,79 @@ specifies software’s operational characteristics
 indicates software's interface with other system elements
 establishes constraints that software must meet
 
+*Rules of Thumb
+
+■ The model should focus on requirements that are visible
+within the problem or business domain. The level of
+abstraction should be relatively high.
+■ Each element of the analysis model should add to an overall
+understanding of software requirements and provide insight
+into the information domain, function and behavior of the
+system.
+■ Delay consideration of infrastructure and other
+non-functional models until design.
+■ Minimize coupling throughout the system.
+■ Be certain that the analysis model provides value to all
+stakeholders.
+■ Keep the model as simple as it can be.
+
+*Domain Analysis
+
+S/W Domain Analysis is the identification,
+analysis and specification of common
+requirements from a specific application domain
+
+*Elements of Requirements Analysis
+
+![[Pasted image 20231211144949.png]]
+
+• Model propose combine features of
+structured analysis and object
+oriented analysis
+• Analysis modeling leads to the
+derivation of each of these modeling
+elements
+• Each element presents the problem
+from different point Of view.
+• The specific content of each element
+may differ from project to project
+• only those modeling elements That
+add value to the model Should be
+used.
+
+*Scenario-Based Modeling
+
+-Use-Cases
+-Activity Diagram
+-Swimlane Diagrams
+
+
+*Flow-Oriented Modeling
+
+it
+provide a view of the system that is
+unique—it should be used to
+supplement other analysis model
+elements
+
+*Class-Based Modeling
+
+■ objects that the system will manipulate
+■ operations (also called methods or services) that will
+be applied to the objects to effect the manipulation
+■ relationships (some hierarchical) between the objects
+■ collaborations that occur between the classes that are
+defined.
+
+
+*Class-responsibility-collaborator (CRC)
+
+A CRC model is really a collection of standard
+index cards that represent classes. The cards
+are divided into three sections. Along the top of
+the card you write the name of the class. In the
+body of the card you list the class
+responsibilities on the left and the collaborators
+on the right.
+
+*Behavioral Modeling
