@@ -441,3 +441,64 @@ system to exhibit some predictable form
 of behavior
 ■ action—process that occurs as a
 consequence of making a transition
+
+
+
+**Chapter 8**
+Design Concepts
+
+■ Good software design should exhibit:
+■ Firmness: A program should not have any bugs that
+inhibit its function.
+■ Commodity: A program should be suitable for the
+purposes for which it was intended.
+■ Delight: The experience of using the program should
+be pleasurable one.
+
+![[Pasted image 20231211151812.png]]
+
+*Characteristics as a
+guide for good
+design
+
+■ the design must implement all of the explicit
+requirements
+■ the design must be a readable,
+understandable guide
+■ the design should provide a complete picture
+of the software
+
+
+*Quality Guidelines
+
+■ A design should exhibit an architecture
+■ A design should be modular
+■ A design should contain distinct representations
+■ A design should lead to data structures that are appropriate
+■ A design should lead to components that exhibit independent functional
+characteristics.
+■ A design should lead to interfaces that reduce the complexity
+■ A design should be derived using a repeatable method
+■ A design should be represented using a notation that effectively communicates
+its meaning.
+
+
+*Quality Attributes
+
+■Functionality
+Assessed by evaluating the feature set and capabilities of
+the program(i.e Functions, Security)
+■Usability
+Assessed by considering human factors (aesthetic,
+consistency, documentation)
+■Reliability
+Assessed by measuring accuracy of output
+■Performance
+Assessed by processing speed, response time, resource
+consumption, throughput, efficiency
+■Supportability : assess based on maintainability
+
+
+*Fundamental  Concepts
+
+_Abstra_
