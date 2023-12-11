@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exam/Untitled.md",
+                "file": "Exam/SE.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exam/Untitled.md",
+                "file": "Exam/SE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exam/Untitled.md",
+                "file": "Exam/SE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exam/Untitled.md"
+                "file": "Exam/SE.md"
               }
             }
           },
@@ -166,23 +166,22 @@
   },
   "active": "b39e47cf6c33d06a",
   "lastOpenFiles": [
-    "000 College/Clip/Unit 5.pptx",
-    "000 College/Clip/~$Unit 5.pptx",
-    "000 College/Clip/Indian contract Act.pptx",
-    "000 College/Clip/copy right act 1957, integrated circut design,GI-1-1 (1).pptx",
-    "000 College/Clip/B- Licensing agreement.pptx",
-    "000 College/Clip/ICA & Essential Elements (1).pdf",
-    "000 College/Clip/Termination_of_Contract.pptx",
-    "000 College/Clip/online contract.pptx",
-    "000 College/Clip/Domain name disputes.pdf",
-    "000 College/Clip/cybercrimes.pptx",
-    "000 College/Clip/IPR and Compition Law.pptx",
-    "Exam/Untitled 1.md",
-    "Exam/Untitled.md",
     "000 College/CLIP ASS-2.md",
+    "001 Project/0400 Chapter 4/ 0410 UML.md",
+    "Exam/SE.md",
+    "000 College/CG/unit-3.1.pdf",
+    "000 College/CG/unit2_2.pdf",
+    "000 College/CG/unit1.ppt.pdf",
+    "000 College/CG/polygon.pdf",
+    "000 College/CG/Line Drawing Algorithms.pptx.pdf",
+    "000 College/CG/crt.pdf",
+    "000 College/CG/chapter2.pptx.pdf",
+    "000 College/CG/2d-transformation.pdf",
+    "000 College/CG/unit5_view.pdf",
+    "000 College/CG/unit5_view (1).pdf",
+    "Exam/Untitled 1.md",
     "Transaction.png.md",
     "001 Project/0400 Chapter 4/ 0430 data_dictionary.md",
-    "001 Project/0400 Chapter 4/ 0410 UML.md",
     "001 Project/0000 Index.md",
     "001 Project/0400 Chapter 4/ 0450 system_navigation.md",
     "001 Project/0400 Chapter 4/ 0410 UML/Sequence Diagram Code/Category.md",
