@@ -501,4 +501,38 @@ consumption, throughput, efficiency
 
 *Fundamental  Concepts
 
-_Abstra_
+■Abstraction
+■Architecture
+■ Patterns
+■ Separation of concerns
+■ Modularity
+■ Hiding
+■ Functional independence
+■ Refinement
+■ Aspects
+■ Refactoring
+■ OO design concepts
+■ Design Classes
+
+
+
+**Chapter 9**
+Architectural Design
+
+The architecture is not the operational software. Rather,
+it is a representation that enables a software engineer
+to:
+(1) analyze the effectiveness of the design
+(2) consider architectural alternatives
+(3) reduce the risks
+
+
+*Architectural Styles
+
+■ Data-centered architectures
+■ Data flow architectures
+■ Call and return architectures
+■ Object-oriented architectures
+■ Layered architectures
+
+
