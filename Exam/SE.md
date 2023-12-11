@@ -186,3 +186,28 @@ Enhanced user engagement
 
 ![[Pasted image 20231211143313.png]]
 
+Use :
+• Projects with unclear business needs or too
+ambitious/innovative requirements.
+• Projects that are large and complicated.
+• Research and development (R&D) activity or the
+introduction of a new service or a product
+
+
+
+**Chapter 3**
+Agile Development
+
+
+*What is “Agility”?
+
+■ Effective response
+■ Effective communication
+■ Drawing the customer
+■ Organizing a team
+■ Rapid
+
+*An Agile Process
+
+-customer descriptions
+
