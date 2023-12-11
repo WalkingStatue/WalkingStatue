@@ -418,3 +418,26 @@ responsibilities on the left and the collaborators
 on the right.
 
 *Behavioral Modeling
+
+• Evaluate all use-cases to fully understand the sequence of
+interaction within the system.
+• Identify events that drive the interaction sequence and
+understand how these events relate to specific objects.
+• Create a sequence for each use-case.
+• Build a state diagram for the system.
+• Review the behavioral model to verify accuracy and
+consistency.
+
+
+*The States of a System
+
+■ state—a set of observable
+circum-stances that characterizes the
+behavior of a system at a given time
+■ state transition—the movement from one
+state to another
+■ event—an occurrence that causes the
+system to exhibit some predictable form
+of behavior
+■ action—process that occurs as a
+consequence of making a transition
