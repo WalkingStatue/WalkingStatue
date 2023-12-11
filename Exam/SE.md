@@ -144,3 +144,45 @@ I can’t assess quality until it is running
 
 **Chapter 2**
 ■ Process Models
+
+![[Pasted image 20231211142855.png]]
+![[Pasted image 20231211142917.png]]
+![[Pasted image 20231211142931.png]]
+
+*Iterative Development
+
+⚫ Benefits
+ Get-as-you-pay
+ feedback for improvement
+⚫ Drawbacks
+ Architecture/design may not be optimal
+ Amount of refactoring may increase
+Total cost may increase
+⚫ Applicability
+where response time is important,
+ risk of long projects cannot be taken,
+ all req not known
+⚫ Execution
+ Each iteration is a mini waterfall – decide the specs,
+then plan the iteration 
+ Length of iteration driven by amount of new
+functionality to be added in an iteration
+
+![[Pasted image 20231211143208.png]]
+
+⚫ Advantages
+ Requirement will be more stable and more likely to
+satisfy user needs
+ Early opportunity to explore scale/performance issues
+Ability to modify or cancel the project early
+Enhanced user engagement
+⚫ Disadvantages:
+ Potential hit on cost and schedule and Risk
+⚫ Applicability:
+ When req are hard to elicit
+ When confidence in reqs is low
+ Where reqs are not well understood
+ When design is driven by user needs
+
+![[Pasted image 20231211143313.png]]
+
