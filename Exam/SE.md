@@ -535,4 +535,43 @@ to:
 ■ Object-oriented architectures
 ■ Layered architectures
 
+![[Pasted image 20231211152650.png]]
+
+
+![[Pasted image 20231211152720.png]]
+
+![[Pasted image 20231211152737.png]]
+
+![[Pasted image 20231211152751.png]]
+
+
+
+*Architectural Design
+
+the design should define the external entities (other
+systems, devices, people) that the software interacts
+with and the nature of the interaction
+
+![[Pasted image 20231211152855.png]]
+
+![[Pasted image 20231211152911.png]]
+
+![[Pasted image 20231211152928.png]]
+
+![[Pasted image 20231211152942.png]]
+
+
+
+
+**Chapter 10**
+Component level Design
+
+component 
+“… a modular, deployable, and replaceable part of a system that encapsulates implementation and exposes a set of interfaces.””
+
+nOO view:  a component contains a set of collaborating classes
+
+nConventional view: a component contains processing logic, the internal data structures that are required to implement the processing logic, and an interface that enables the component to be invoked and data to be passed to it.
+
+![[Pasted image 20231211153137.png]]
 
