@@ -78,7 +78,69 @@ software project , regardless of size, complexity
 
 ■ Communication-Communicate with stakeholders and
 customers
-■ Planning
-■ Modeling
-■ Construction
-■ Deployment
+■ Planning-resources
+needed, tasks and risk factors likely to occur, schedule
+■ Modeling-Architectural models and design
+■ Construction-Generation of code and testing
+■ Deployment-completed product is delivered
+
+*Umbrella Activities
+
+■ Software project tracking and control
+■ Risk management
+■ Software quality assurance (SQA
+■ Technical reviews
+■ Measurement
+■ Software configuration management (SCM)
+■ Reusability management
+■ Work product preparation and production
+
+
+*The Essence of Practice
+
+■ General steps in carrying out in software
+engineering are
+1. Understand the problem through communication.
+2. Plan a solution by modeling and software design.
+3. Carry out the plan for code generation.
+4. Examine the result for accuracy by testing and quality
+assurance.
+
+
+*Hooker’s General Principles
+
+■ 1: The Reason It All Exists : s/w system is required to , provide value
+to its user, so before starting any project ask “ Does this add real value to the system “ if
+answer is “no” , then do not do it
+■ 2: KISS (Keep It Simple, Stupid!) : so easy to maintain and
+generate less error
+■ 3: Maintain the Vision : without conceptual integrity , a system become
+patchwork of incompatible design
+■ 4: What You Produce, Others Will Consume
+■ 5: Be Open to the Future
+■ 6: Plan Ahead for Reuse
+■ 7: Think! : placing clear, complete thought before action always produce better
+result
+
+
+*Software Myths
+
+■ Management
+ We have standards
+We have new computers
+ We’ll add more people to catch up
+I outsourced it, I’m done
+■ Customer
+ We have general objectives, let’s start
+ Change is easily accommodated
+■ Practitioner
+ We’ll write it and be done
+I can’t assess quality until it is running
+ I only need deliver code
+ Software engineering is about meaningless documents
+
+
+
+
+**Chapter 2**
+■ Process Models
