@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "2224ced4b291cb00",
@@ -164,7 +165,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b39e47cf6c33d06a",
+  "active": "d8f91048e6296c4b",
   "lastOpenFiles": [
     "Exam/Pasted image 20231211153151.png",
     "Exam/Pasted image 20231211153137.png",
