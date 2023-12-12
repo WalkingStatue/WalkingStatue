@@ -575,3 +575,74 @@ nConventional view: a component contains processing logic, the internal data str
 
 ![[Pasted image 20231211153137.png]]
 
+![[Pasted image 20231211153151.png]]
+
+*Design Guidelines
+
+nComponents
+
+nNaming conventions should be established for components that are specified as part of the architectural model and then refined and elaborated as part of the component-level model
+
+nInterfaces
+
+n Interfaces provide important information about communication and collaboration (as well as helping us to achieve the OCP)
+
+nDependencies and Inheritance
+
+nit is a good idea to model dependencies from left to right and inheritance from bottom (derived classes) to top (base classes).
+
+*Cohesion
+
+nConventional view:
+
+nthe “single-mindedness” of a module
+
+nOO view:
+
+ncohesion implies that a component or class encapsulates only attributes and operations that are closely related to one another and to the class or component itself
+
+nLevels of cohesion
+
+nFunctional
+
+nLayer
+
+nCommunicational
+
+nSequential
+
+nProcedural
+
+nTemporal
+
+utility
+
+*Coupling
+
+nConventional view:
+
+nThe degree to which a component is connected to other components and to the external world
+
+nOO view:
+
+na qualitative measure of the degree to which classes are connected to one another
+
+nLevel of coupling
+
+nContent
+
+nCommon
+
+nControl
+
+nStamp
+
+nData
+
+nRoutine call
+
+nType use
+
+nInclusion or import
+
+External
